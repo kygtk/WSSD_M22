@@ -1,0 +1,115 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9022EC2-C0FF-4122-A155-AFA7729F6425}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.CvUnit</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CvUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CvUnit.Designer.cs">
+      <DependentUpon>CvUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CvUnit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CvUnit.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{bc761389-b4de-4459-8530-bde2973a7a83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.CvMotor\Dms.Control.CvMotor.csproj">
+      <Project>{621A5734-1E21-4014-B9BE-5A14D113E544}</Project>
+      <Name>Dms.Control.CvMotor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.GlsData\Dms.Control.GlsData.csproj">
+      <Project>{CDA4E1F9-2774-481E-B891-6D8221EED896}</Project>
+      <Name>Dms.Control.GlsData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.GlsSensor\Dms.Control.GlsSensor.csproj">
+      <Project>{ab7fa2cb-4982-4060-8b79-7965fdd49e56}</Project>
+      <Name>Dms.Control.GlsSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.LeakSensor\Dms.Control.LeakSensor.csproj">
+      <Project>{603E7CB9-E5E8-4854-844A-2F28FCF101B2}</Project>
+      <Name>Dms.Control.LeakSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.Unit\Dms.Control.Unit.csproj">
+      <Project>{8886031B-7B53-484B-8B42-FFE31DFFD9B9}</Project>
+      <Name>Dms.Control.Unit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

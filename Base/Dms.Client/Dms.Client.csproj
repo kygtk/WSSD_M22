@@ -1,0 +1,114 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{065CE86F-CAEC-463F-8D13-3D0F86B061B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Client</RootNamespace>
+    <AssemblyName>Dms.Client</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientManager.cs" />
+    <Compile Include="EventSubscriber.cs" />
+    <Compile Include="MessageBroadcaster.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClientData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dms.Common\Dms.Common.csproj">
+      <Project>{bc761389-b4de-4459-8530-bde2973a7a83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.DataProvider\Dms.Data.DataProvider.csproj">
+      <Project>{feb17e40-e9f9-4736-86b7-ed6a6cfdf933}</Project>
+      <Name>Dms.Data.DataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.GlassData\Dms.Data.GlassData.csproj">
+      <Project>{34F81F09-6B94-4F46-8711-C555FA21E773}</Project>
+      <Name>Dms.Data.GlassData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.SetupItem\Dms.Data.SetupItem.csproj">
+      <Project>{69D50944-7ABF-4B3E-803E-5D3C0B6E886A}</Project>
+      <Name>Dms.Data.SetupItem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.UserAccount\Dms.Data.UserAccount.csproj">
+      <Project>{52242f19-2b1c-4cd9-a30c-39aebb03e8ff}</Project>
+      <Name>Dms.Data.UserAccount</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Device\Dms.Device.csproj">
+      <Project>{fd61731d-4cf7-40b4-9e46-0252affb6509}</Project>
+      <Name>Dms.Device</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Remoting\Dms.Remoting.csproj">
+      <Project>{f8cfb0fc-2b73-4f97-9010-3236b6dd2aa4}</Project>
+      <Name>Dms.Remoting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.ServerCommon\Dms.ServerCommon.csproj">
+      <Project>{9e0f819e-7f99-425d-9903-3cada8fd0b5e}</Project>
+      <Name>Dms.ServerCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

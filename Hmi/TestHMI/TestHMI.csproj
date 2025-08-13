@@ -1,0 +1,130 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9F4A262-7A5F-4F67-B48D-E4BA218E13BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestHMI</RootNamespace>
+    <AssemblyName>TestHMI</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Control.DoubleBufferedGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Control.ViewObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Data.Alarm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Data.Recipe, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Data.SetupItem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.DeviceLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Mitsubishi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Util.IODefine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\Dms.Common\Dms.Common.csproj">
+      <Project>{BC761389-B4DE-4459-8530-BDE2973A7A83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ActuatorTurn\Dms.Control.ActuatorTurn.csproj">
+      <Project>{8D1C286F-1C4E-4B00-8303-E2DADAC737F7}</Project>
+      <Name>Dms.Control.ActuatorTurn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Actuator\Dms.Control.Actuator.csproj">
+      <Project>{90512A15-E44E-4056-9CEF-D4A8640092AE}</Project>
+      <Name>Dms.Control.Actuator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.CvMotor\Dms.Control.CvMotor.csproj">
+      <Project>{621A5734-1E21-4014-B9BE-5A14D113E544}</Project>
+      <Name>Dms.Control.CvMotor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.CylinderGroupBox\Dms.Control.CylinderGroupBox.csproj">
+      <Project>{02BDB251-662E-48F7-AA8B-4C1B0B759495}</Project>
+      <Name>Dms.Control.CylinderGroupBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Cylinder\Dms.Control.Cylinder.csproj">
+      <Project>{11254E10-0EBA-42E5-8705-832B9C384530}</Project>
+      <Name>Dms.Control.Cylinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.TagButton\Dms.Control.TagButton.csproj">
+      <Project>{2A2B14A5-179C-496E-B002-6F1970ACB3C3}</Project>
+      <Name>Dms.Control.TagButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Server\Dms.Server\Dms.Server.csproj">
+      <Project>{E1D33C09-A135-4865-9A01-0FF2EAF45350}</Project>
+      <Name>Dms.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Client\Dms.Client.csproj">
+      <Project>{065CE86F-CAEC-463F-8D13-3D0F86B061B6}</Project>
+      <Name>Dms.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Server.UI\Dms.Server.UI.csproj">
+      <Project>{712D5E43-E4FF-4469-BFE9-DE75BC9F651A}</Project>
+      <Name>Dms.Server.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

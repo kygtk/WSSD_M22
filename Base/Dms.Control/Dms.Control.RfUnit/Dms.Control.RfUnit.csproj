@@ -1,0 +1,98 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6273C3BF-EC01-4111-A47E-C0C97980B937}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.RfUnit</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Control.Description, Version=1.0.3572.38332, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\DMS\SNT\4. Program\2. Code\09GE08_SNT_HWCVD\Base\System\Dms.Control.Description.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Data.Recipe, Version=1.0.3852.24912, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Assembly\Dms.Data.Recipe.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DlgRfUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgRfUnit.Designer.cs">
+      <DependentUpon>DlgRfUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RfUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RfUnit.Designer.cs">
+      <DependentUpon>RfUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RfUnitStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RfUnitStatus.Designer.cs">
+      <DependentUpon>RfUnitStatus.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DlgRfUnit.resx">
+      <DependentUpon>DlgRfUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RfUnit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RfUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RfUnitStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RfUnitStatus.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Client\Dms.Client.csproj">
+      <Project>{065CE86F-CAEC-463F-8D13-3D0F86B061B6}</Project>
+      <Name>Dms.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{BC761389-B4DE-4459-8530-BDE2973A7A83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

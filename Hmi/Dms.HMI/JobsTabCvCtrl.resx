@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dataCurGlsCount.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0dlbklu
+        Zm8GBAAAAAtDdXJHbHNDb3VudAs=
+</value>
+  </data>
+  <data name="data6.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0dlbklu
+        Zm8GBAAAAAtFUVBHbHNDb3VudAs=
+</value>
+  </data>
+  <data name="data5.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0dlbklu
+        Zm8GBAAAABNJZGxlUnVubmluZ1Byb2dyZXNzCw==
+</value>
+  </data>
+  <data name="data2.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0dlbklu
+        Zm8GBAAAAA1Ub3RhbEdsc0NvdW50Cw==
+</value>
+  </data>
+  <data name="data4.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0dlbklu
+        Zm8GBAAAAAtDdXJSZWNpcGVJZAs=
+</value>
+  </data>
+  <data name="data1.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0dlbklu
+        Zm8GBAAAAAhUYWN0VGltZQs=
+</value>
+  </data>
+  <data name="glsSensor14.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAWTEQgQ1Y2IFVuaXQgT1VUIFNlbnNvcgs=
+</value>
+  </data>
+  <data name="glsSensor12.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAWTEQgQ1Y1IFVuaXQgT1VUIFNlbnNvcgs=
+</value>
+  </data>
+  <data name="glsSensor10.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAWTEQgQ1Y0IFVuaXQgT1VUIFNlbnNvcgs=
+</value>
+  </data>
+  <data name="glsSensor8.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAWTEQgQ1YzIFVuaXQgT1VUIFNlbnNvcgs=
+</value>
+  </data>
+  <data name="glsSensor6.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAYTEQgQ1YyXzIgVW5pdCBPVVQgU2Vuc29yCw==
+</value>
+  </data>
+  <data name="glsSensor4.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAYTEQgQ1YyXzEgVW5pdCBPVVQgU2Vuc29yCw==
+</value>
+  </data>
+  <data name="glsSensor13.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAVTEQgQ1Y2IFVuaXQgSU4gU2Vuc29yCw==
+</value>
+  </data>
+  <data name="glsSensor2.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAWTEQgQ1YxIFVuaXQgT1VUIFNlbnNvcgs=
+</value>
+  </data>
+  <data name="glsSensor11.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAVTEQgQ1Y1IFVuaXQgSU4gU2Vuc29yCw==
+</value>
+  </data>
+  <data name="glsSensor9.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAVTEQgQ1Y0IFVuaXQgSU4gU2Vuc29yCw==
+</value>
+  </data>
+  <data name="glsSensor7.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAVTEQgQ1YzIFVuaXQgSU4gU2Vuc29yCw==
+</value>
+  </data>
+  <data name="glsSensor5.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAXTEQgQ1YyXzIgVW5pdCBJTiBTZW5zb3IL
+</value>
+  </data>
+  <data name="glsSensor3.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAXTEQgQ1YyXzEgVW5pdCBJTiBTZW5zb3IL
+</value>
+  </data>
+  <data name="glsSensor1.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJR2xzU2Vu
+        c29yBgQAAAAJR2xzU2Vuc29yBgUAAAAVTEQgQ1YxIFVuaXQgSU4gU2Vuc29yCw==
+</value>
+  </data>
+  <data name="unit7.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0VxcFVu
+        aXQGBAAAAAxDUFQgRzYgUFBDTE4L
+</value>
+  </data>
+  <data name="unit6.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0VxcFVu
+        aXQGBAAAAAxDUFQgRzYgUFBDTE4L
+</value>
+  </data>
+  <data name="unit5.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0VxcFVu
+        aXQGBAAAAAxDUFQgRzYgUFBDTE4L
+</value>
+  </data>
+  <data name="unit4.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0VxcFVu
+        aXQGBAAAAAxDUFQgRzYgUFBDTE4L
+</value>
+  </data>
+  <data name="unit3.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0VxcFVu
+        aXQGBAAAAAxDUFQgRzYgUFBDTE4L
+</value>
+  </data>
+  <data name="unit2.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0VxcFVu
+        aXQGBAAAAAxDUFQgRzYgUFBDTE4L
+</value>
+  </data>
+  <data name="unit1.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAACgYDAAAAB0VxcFVu
+        aXQGBAAAAAxDUFQgRzYgUFBDTE4L
+</value>
+  </data>
+  <data name="cylinder1.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJX0FjdHVh
+        dG9yBgQAAAAIQ3lsaW5kZXIGBQAAAB1MRCBDVjJfMSBVbml0IFVwRG93biBDeWxpbmRlcgs=
+</value>
+  </data>
+  <data name="cvMotor1.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGX01vdG9y
+        BgQAAAAIRkJMTW90b3IGBQAAABVMRCBDVjEgVW5pdCBGQkwgTW90b3IL
+</value>
+  </data>
+  <data name="cvMotor2.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGX01vdG9y
+        BgQAAAAIRkJMTW90b3IGBQAAABdMRCBDVjJfMSBVbml0IEZCTCBNb3Rvcgs=
+</value>
+  </data>
+  <data name="cvMotor3.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGX01vdG9y
+        BgQAAAAIRkJMTW90b3IGBQAAABdMRCBDVjJfMiBVbml0IEZCTCBNb3Rvcgs=
+</value>
+  </data>
+  <data name="cvMotor4.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGX01vdG9y
+        BgQAAAAIRkJMTW90b3IGBQAAABVMRCBDVjMgVW5pdCBGQkwgTW90b3IL
+</value>
+  </data>
+  <data name="cvMotor5.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGX01vdG9y
+        BgQAAAAIRkJMTW90b3IGBQAAABVMRCBDVjQgVW5pdCBGQkwgTW90b3IL
+</value>
+  </data>
+  <data name="cvMotor6.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGX01vdG9y
+        BgQAAAAIRkJMTW90b3IGBQAAABVMRCBDVjUgVW5pdCBGQkwgTW90b3IL
+</value>
+  </data>
+  <data name="cvMotor7.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGX01vdG9y
+        BgQAAAAIRkJMTW90b3IGBQAAABVMRCBDVjYgVW5pdCBGQkwgTW90b3IL
+</value>
+  </data>
+  <data name="cylinder3.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJX0FjdHVh
+        dG9yBgQAAAAIQ3lsaW5kZXIGBQAAACBMRCBDVjEgVW5pdCBGcm9udCBBbGlnbiBDeWxpbmRlcgs=
+</value>
+  </data>
+  <data name="cylinder2.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAJX0FjdHVh
+        dG9yBgQAAAAIQ3lsaW5kZXIGBQAAAB9MRCBDVjEgVW5pdCBSZWFyIEFsaWduIEN5bGluZGVyCw==
+</value>
+  </data>
+  <data name="sensor1.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGU2Vuc29y
+        BgQAAAAGU2Vuc29yBgUAAAAYTEQgQ1YyXzEgVW5pdCBEZWMgU2Vuc29yCw==
+</value>
+  </data>
+  <data name="sensor2.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGU2Vuc29y
+        BgQAAAAGU2Vuc29yBgUAAAAZTEQgQ1YyXzEgVW5pdCBJbnRyIFNlbnNvcgs=
+</value>
+  </data>
+  <data name="doorSensor7.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGU2Vuc29y
+        BgQAAAAKRG9vclNlbnNvcgYFAAAAHExEIENWMSBVbml0IFJlYXIgRG9vciBTZW5zb3IL
+</value>
+  </data>
+  <data name="doorSensor1.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGU2Vuc29y
+        BgQAAAAKRG9vclNlbnNvcgYFAAAAHUxEIENWMSBVbml0IEZyb250IERvb3IgU2Vuc29yCw==
+</value>
+  </data>
+  <data name="doorSensor2.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGU2Vuc29y
+        BgQAAAAKRG9vclNlbnNvcgYFAAAAHUxEIENWMiBVbml0IEZyb250IERvb3IgU2Vuc29yCw==
+</value>
+  </data>
+  <data name="doorSensor3.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGU2Vuc29y
+        BgQAAAAKRG9vclNlbnNvcgYFAAAAHExEIENWMiBVbml0IFJlYXIgRG9vciBTZW5zb3IL
+</value>
+  </data>
+  <data name="doorSensor4.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGU2Vuc29y
+        BgQAAAAKRG9vclNlbnNvcgYFAAAAHUxEIENWMyBVbml0IEZyb250IERvb3IgU2Vuc29yCw==
+</value>
+  </data>
+  <data name="doorSensor5.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAGU2Vuc29y
+        BgQAAAAKRG9vclNlbnNvcgYFAAAAHExEIENWMyBVbml0IFJlYXIgRG9vciBTZW5zb3IL
+</value>
+  </data>
+  <data name="genInfo1.DeviceTagInfo" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEFEbXMuQ29tbW9uLCBWZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9
+        bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAGERtcy5Db21tb24uRGV2aWNlVGFnSW5mbwMA
+        AAAMbV9GYW1pbHlUeXBlDG1fRGV2aWNlVHlwZQxtX0RldmljZU5hbWUBAQECAAAABgMAAAAHX0Rldmlj
+        ZQYEAAAAB0dlbkluZm8GBQAAAAhDbGVhbk91dAs=
+</value>
+  </data>
+</root>

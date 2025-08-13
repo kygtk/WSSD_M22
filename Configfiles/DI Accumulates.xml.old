@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FlowAccuItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SavedTime>2011-02-04T18:21:02.11425+09:00</SavedTime>
+  <TotalFlow>233574.1500002816</TotalFlow>
+  <OldTotalFlow>2506.3500000000304</OldTotalFlow>
+  <HoldTime>1</HoldTime>
+</FlowAccuItem>

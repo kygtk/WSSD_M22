@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <CurrentAlarms>
+    <AlarmId>565</AlarmId>
+    <AlarmName>PC MEMORY Over Detect</AlarmName>
+  </CurrentAlarms>
+</DocumentElement>

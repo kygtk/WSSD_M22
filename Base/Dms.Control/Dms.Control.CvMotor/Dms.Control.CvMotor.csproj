@@ -1,0 +1,181 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{621A5734-1E21-4014-B9BE-5A14D113E544}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.CvMotor</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Control.DoubleBufferedGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CvMotorButtonOp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CvMotorButtonOp.Designer.cs">
+      <DependentUpon>CvMotorButtonOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CvMotorGridOp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CvMotorGridOp.Designer.cs">
+      <DependentUpon>CvMotorGridOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CvMotorOperation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CvMotorOperation.Designer.cs">
+      <DependentUpon>CvMotorOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgCvMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgCvMotor.Designer.cs">
+      <DependentUpon>DlgCvMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CvMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CvMotor.Designer.cs">
+      <DependentUpon>CvMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServoCvMotorButtonOp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServoCvMotorButtonOp.Designer.cs">
+      <DependentUpon>ServoCvMotorButtonOp.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CvMotorOperation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CvMotorOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgCvMotor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DlgCvMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CvMotor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CvMotor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cv_off.bmp" />
+    <None Include="Resources\cv_alarm.bmp" />
+    <None Include="Resources\cv6.bmp" />
+    <None Include="Resources\cv5.bmp" />
+    <None Include="Resources\cv4.bmp" />
+    <None Include="Resources\cv3.bmp" />
+    <None Include="Resources\cv2.bmp" />
+    <None Include="Resources\cv1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CvMotorButtonOp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CvMotorButtonOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CvMotorGridOp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CvMotorGridOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CvMotorIcon.bmp" />
+    <EmbeddedResource Include="ServoCvMotorButtonOp.resx">
+      <DependentUpon>ServoCvMotorButtonOp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CvMotorAni.bmp" />
+    <Content Include="Resources\cv_L.bmp" />
+    <Content Include="Resources\cv_R.bmp" />
+    <Content Include="Resources\cv_STOP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCVSINGLELib">
+      <Guid>{7EC58CA4-1C2D-4147-895E-697A143BC818}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CVSINGLELib">
+      <Guid>{7EC58CA4-1C2D-4147-895E-697A143BC818}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Client\Dms.Client.csproj">
+      <Project>{065CE86F-CAEC-463F-8D13-3D0F86B061B6}</Project>
+      <Name>Dms.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.ServerCommon\Dms.ServerCommon.csproj">
+      <Project>{9E0F819E-7F99-425D-9903-3CADA8FD0B5E}</Project>
+      <Name>Dms.ServerCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,159 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B33C07B2-2C7E-4E60-BE93-8B4563D804BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.Hpmj</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ViewHpmj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewHpmj.Designer.cs">
+      <DependentUpon>ViewHpmj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHpmj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewHpmj.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARROW_UP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARROW_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{BC761389-B4DE-4459-8530-BDE2973A7A83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.DataProvider\Dms.Data.SetupItem\Dms.Data.SetupItem.csproj">
+      <Project>{69d50944-7abf-4b3e-803e-5d3c0b6e886a}</Project>
+      <Name>Dms.Data.SetupItem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.AutoValve\Dms.Control.AutoValve.csproj">
+      <Project>{0017887C-8B24-42A9-8F32-9B10097324B6}</Project>
+      <Name>Dms.Control.AutoValve</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.DoubleBufferedGridView\Dms.Control.DoubleBufferedGridView.csproj">
+      <Project>{1E5EBD94-D93E-4F7A-9CE8-40FD2D432035}</Project>
+      <Name>Dms.Control.DoubleBufferedGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.Gauge\Dms.Control.Gauge.csproj">
+      <Project>{D185BCEC-93B2-4364-882C-B657046B46E8}</Project>
+      <Name>Dms.Control.Gauge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.GenInfo\Dms.Control.GenInfo.csproj">
+      <Project>{B1163907-CAD7-4F7D-9789-A3B2157A7626}</Project>
+      <Name>Dms.Control.GenInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.Pump\Dms.Control.Pump.csproj">
+      <Project>{8445B117-36E9-4086-B21F-2793098BAFB2}</Project>
+      <Name>Dms.Control.Pump</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.Sensor\Dms.Control.Sensor.csproj">
+      <Project>{FB72ADA1-422F-422E-A30F-F8A5006F1326}</Project>
+      <Name>Dms.Control.Sensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.Shower\Dms.Control.Shower.csproj">
+      <Project>{756D9566-A20C-4C97-A8A2-85CECB967568}</Project>
+      <Name>Dms.Control.Shower</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARROW_DN.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

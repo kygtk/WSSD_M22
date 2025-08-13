@@ -1,0 +1,191 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{712D5E43-E4FF-4469-BFE9-DE75BC9F651A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Server.UI</RootNamespace>
+    <AssemblyName>Dms.Server.UI</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Ctl.FtpClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Ctl.FtpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Data.Alarm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Data.Alarm.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Data.SetupItem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Data.SetupItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Data.UserAccount, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Data.UserAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Device.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAlarmList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlarmList.Designer.cs">
+      <DependentUpon>FormAlarmList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFtp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFtp.Designer.cs">
+      <DependentUpon>FormFtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecipe.Designer.cs">
+      <DependentUpon>FormRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServer.Designer.cs">
+      <DependentUpon>FormServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetup.Designer.cs">
+      <DependentUpon>FormSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAlarmList.resx">
+      <DependentUpon>FormAlarmList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFtp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe.resx">
+      <DependentUpon>FormRecipe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServer.resx">
+      <DependentUpon>FormServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetup.resx">
+      <DependentUpon>FormSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\Dms.DataProvider\Dms.Data.DataProvider\Dms.Data.DataProvider.csproj">
+      <Project>{feb17e40-e9f9-4736-86b7-ed6a6cfdf933}</Project>
+      <Name>Dms.Data.DataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.DataProvider\Dms.Data.Recipe\Dms.Data.Recipe.csproj">
+      <Project>{89e13edf-0c74-4b9f-a0ef-a90901737724}</Project>
+      <Name>Dms.Data.Recipe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.ServerCommon\Dms.ServerCommon.csproj">
+      <Project>{9E0F819E-7F99-425D-9903-3CADA8FD0B5E}</Project>
+      <Name>Dms.ServerCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Server\Dms.Server\Dms.Server.csproj">
+      <Project>{51B3F6FD-BAA6-45DB-9C53-E82F38A11097}</Project>
+      <Name>Dms.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,341 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC761389-B4DE-4459-8530-BDE2973A7A83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Common</RootNamespace>
+    <AssemblyName>Dms.Common</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\_Device.cs" />
+    <Compile Include="Abstract\_DmsDataAdaptor.cs" />
+    <Compile Include="Abstract\_GenInfoHandler.cs" />
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="AppData.cs" />
+    <Compile Include="ASCII.cs" />
+    <Compile Include="BaseGlobalVar.cs" />
+    <Compile Include="DmsNodeTag.cs" />
+    <Compile Include="Forms\FormDmsNodeTagSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDmsNodeTagSelect.Designer.cs">
+      <DependentUpon>FormDmsNodeTagSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormExceptionHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormExceptionHandler.designer.cs">
+      <DependentUpon>FormExceptionHandler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSimulationConfigHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSimulationConfigHelper.Designer.cs">
+      <DependentUpon>FormSimulationConfigHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAppConfigHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAppConfigHelper.Designer.cs">
+      <DependentUpon>FormAppConfigHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DataGridViewDisableButtonCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\DataGridViewImageTextCell.cs" />
+    <Compile Include="Forms\FormInitStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInitStatus.Designer.cs">
+      <DependentUpon>FormInitStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormKeyPadSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormKeyPadSelect.Designer.cs">
+      <DependentUpon>FormKeyPadSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIEditorDmsNodeTagSelect.cs" />
+    <Compile Include="Forms\UIEditorFileSelect.cs" />
+    <Compile Include="Forms\UIEditorSimluationConfigHelper.cs" />
+    <Compile Include="Forms\ViewDmsNodeTagSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewDmsNodeTagSelect.Designer.cs">
+      <DependentUpon>ViewDmsNodeTagSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralData.cs" />
+    <Compile Include="GenInfoCollection.cs" />
+    <Compile Include="Interface\ICtlDevice_Adv.cs" />
+    <Compile Include="Interface\IDmsUserControl.cs" />
+    <Compile Include="Forms\KeyPadIpAddressBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyPadIpAddressBox.designer.cs">
+      <DependentUpon>KeyPadIpAddressBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeyPadTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyPadTextBox.Designer.cs">
+      <DependentUpon>KeyPadTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTagDescriptorSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTagDescriptorSelect.Designer.cs">
+      <DependentUpon>FormTagDescriptorSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeyPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIEditorTagSelect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\UIEditorTagDescriptorSelect.cs" />
+    <Compile Include="Forms\ValidationTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UIEditorKeyPadSelect.cs" />
+    <Compile Include="Interface\IDeviceFactory.cs" />
+    <Compile Include="Interface\ILoaderMaster.cs" />
+    <Compile Include="Interface\IRobotMaster.cs" />
+    <Compile Include="Interface\IRobotSlave.cs" />
+    <Compile Include="Interface\ILoaderSlave.cs" />
+    <Compile Include="Interface\IServoMotor.cs" />
+    <Compile Include="KeyInValidation.cs" />
+    <Compile Include="Remoting\IDMSComm.cs" />
+    <Compile Include="SlaveStateEventArgs.cs" />
+    <Compile Include="TagCimCommonTypes.cs" />
+    <Compile Include="TagEqpState.cs" />
+    <Compile Include="TagEuvData.cs" />
+    <Compile Include="TagMelsecTypes.cs" />
+    <Compile Include="TagMP2300Data.cs" />
+    <Compile Include="TagOptionFormat.cs" />
+    <Compile Include="TagDescriptors.cs" />
+    <Compile Include="TagGenData.cs" />
+    <Compile Include="TagPlasmaData.cs" />
+    <Compile Include="TagSolarCimCommonTypes.cs" />
+    <Compile Include="TagYaskawaNX100Data.cs" />
+    <Compile Include="TagLoaderData_BoeHF.cs" />
+    <Compile Include="XApdLog.cs" />
+    <Compile Include="XExcelTable.cs" />
+    <Compile Include="XExceptionHandler.cs" />
+    <Compile Include="XFileMap.cs" />
+    <Compile Include="XFunc.cs" />
+    <Compile Include="CommonDelegate.cs" />
+    <Compile Include="DeviceTagInfo.cs" />
+    <Compile Include="Forms\DlgSelectValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DlgSelectValue.Designer.cs">
+      <DependentUpon>DlgSelectValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DmsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceTag.cs" />
+    <Compile Include="DeviceTags.cs" />
+    <Compile Include="Forms\FormTagContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTagContainer.Designer.cs">
+      <DependentUpon>FormTagContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTagSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTagSelect.designer.cs">
+      <DependentUpon>FormTagSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIEditorTagInfoSelect.cs" />
+    <Compile Include="Forms\ViewTagContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewTagContainer.Designer.cs">
+      <DependentUpon>ViewTagContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericTag.cs" />
+    <Compile Include="GenericTags.cs" />
+    <Compile Include="GenInfo.cs" />
+    <Compile Include="Interface\IGlassAni.cs">
+    </Compile>
+    <Compile Include="Remoting\BroadcastEventHelper.cs" />
+    <Compile Include="Interface\ITankLevel.cs" />
+    <Compile Include="TagDeviceAct.cs" />
+    <Compile Include="Interface\ICtlDevice.cs" />
+    <Compile Include="Interface\ICtlServoUnit.cs" />
+    <Compile Include="Interface\IMotionControl.cs" />
+    <Compile Include="TagMmcData.cs" />
+    <Compile Include="EventIoEventHandler.cs" />
+    <Compile Include="EventServoEventHandler.cs" />
+    <Compile Include="Forms\ViewTagSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewTagSelect.Designer.cs">
+      <DependentUpon>ViewTagSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XLog.cs" />
+    <Compile Include="XLogGarbageCollector.cs" />
+    <Compile Include="XSeqFunction.cs" />
+    <Compile Include="XSequence.cs" />
+    <Compile Include="TagErrorCode.cs" />
+    <Compile Include="Remoting\IBroadcaster.cs" />
+    <Compile Include="Interface\ICtlPiping.cs" />
+    <Compile Include="Interface\ICtlGauge.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remoting\RemotingHelper.cs" />
+    <Compile Include="Remoting\ServerNotAliveException.cs" />
+    <Compile Include="XTimer.cs" />
+    <Compile Include="XSeqInitFunction.cs" />
+    <Compile Include="XTasLog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FormAppConfigHelper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAppConfigHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDmsNodeTagSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDmsNodeTagSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormExceptionHandler.resx">
+      <DependentUpon>FormExceptionHandler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormInitStatus.resx">
+      <DependentUpon>FormInitStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormKeyPadSelect.resx">
+      <DependentUpon>FormKeyPadSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSimulationConfigHelper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSimulationConfigHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeyPadIpAddressBox.resx">
+      <DependentUpon>KeyPadIpAddressBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeyPadTextBox.resx">
+      <DependentUpon>KeyPadTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DlgSelectValue.resx">
+      <DependentUpon>DlgSelectValue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTagContainer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTagContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTagDescriptorSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTagDescriptorSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTagSelect.resx">
+      <DependentUpon>FormTagSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewDmsNodeTagSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewDmsNodeTagSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewTagSelect.resx">
+      <DependentUpon>ViewTagSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewTagContainer.resx">
+      <DependentUpon>ViewTagContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dms.Control\Dms.Control.DoubleBufferedGridView\Dms.Control.DoubleBufferedGridView.csproj">
+      <Project>{1e5ebd94-d93e-4f7a-9ce8-40fd2d432035}</Project>
+      <Name>Dms.Control.DoubleBufferedGridView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,507 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD61731D-4CF7-40B4-9E46-0252AFFB6509}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Device</RootNamespace>
+    <AssemblyName>Dms.Device</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbsodexMotor.cs" />
+    <Compile Include="Abstract\_BCR.cs" />
+    <Compile Include="Abstract\_DevicePeer.cs" />
+    <Compile Include="Abstract\_EuvUnit.cs" />
+    <Compile Include="Abstract\_IndexRobot.cs" />
+    <Compile Include="Abstract\_JobCondition.cs" />
+    <Compile Include="Abstract\_ComponentContainer.cs" />
+    <Compile Include="Abstract\_InterlockSensor.cs" />
+    <Compile Include="Abstract\_ServoMotor.cs" />
+    <Compile Include="Abstract\_ServoUnit.cs" />
+    <Compile Include="Abstract\_HeatExchanger.cs" />
+    <Compile Include="Abstract\_Rfg.cs" />
+    <Compile Include="ActuatorUnit.cs" />
+    <Compile Include="AlarmItem.cs" />
+    <Compile Include="AlarmResetSwitch.cs" />
+    <Compile Include="AlarmResetSwitchControl.cs" />
+    <Compile Include="ApdItem.cs" />
+    <Compile Include="ApdItems.cs" />
+    <Compile Include="ApdItemsHandler.cs" />
+    <Compile Include="AreaSensor.cs" />
+    <Compile Include="AutoValve2.cs" />
+    <Compile Include="BCR_BoeHF.cs" />
+    <Compile Include="BOELoaderInterface.cs" />
+    <Compile Include="BufferUnit.cs" />
+    <Compile Include="CimUnit.cs" />
+    <Compile Include="CimUnits.cs" />
+    <Compile Include="CstMappingUnit_BoeHF_Theragen.cs" />
+    <Compile Include="D40A.cs" />
+    <Compile Include="D4SL.cs" />
+    <Compile Include="DoorLockSensor.cs" />
+    <Compile Include="EGiSInterface.cs" />
+    <Compile Include="ESD.cs" />
+    <Compile Include="ETCDigitalOutput.cs" />
+    <Compile Include="EyeEuvUnit.cs" />
+    <Compile Include="Fan.cs" />
+    <Compile Include="FlowAccuItem.cs" />
+    <Compile Include="FlowAccumulate.cs" />
+    <Compile Include="FlowmeterCDA.cs" />
+    <Compile Include="FlowmeterDIW.cs" />
+    <Compile Include="ForcedExhaust.cs" />
+    <Compile Include="Forms\FormIOConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormIOConfig.Designer.cs">
+      <DependentUpon>FormIOConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSlaveConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSlaveConfig.Designer.cs">
+      <DependentUpon>FormSlaveConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIEditorIOConfig.cs" />
+    <Compile Include="Forms\UIEditorSlaveConfig.cs" />
+    <Compile Include="GasControl.cs" />
+    <Compile Include="HardInterlockItems.cs" />
+    <Compile Include="HeatExchanger.cs" />
+    <Compile Include="HpmjInterface.cs" />
+    <Compile Include="IntegratingFlowmeter.cs" />
+    <Compile Include="Interface\iIoCollection.cs" />
+    <Compile Include="Interface\IServer.cs" />
+    <Compile Include="IoControllers.cs" />
+    <Compile Include="ISlaveCollection.cs" />
+    <Compile Include="LampSwitch.cs" />
+    <Compile Include="LCT.cs" />
+    <Compile Include="LFC.cs" />
+    <Compile Include="LGDLoaderInterlock.cs" />
+    <Compile Include="LoaderUnit.cs" />
+    <Compile Include="LoaderUnit_232C.cs" />
+    <Compile Include="LoaderUnit_BoeHF_Theragen.cs" />
+    <Compile Include="LockChamber.cs" />
+    <Compile Include="Manometer.cs" />
+    <Compile Include="MotorLoadFactor.cs" />
+    <Compile Include="PMChamber_PECVD.cs" />
+    <Compile Include="PMChamber_RIE.cs" />
+    <Compile Include="PMChamber_HWCVD.cs" />
+    <Compile Include="PortUnit.cs" />
+    <Compile Include="PortUnit_BoeHF_Theragen.cs" />
+    <Compile Include="PortUnit_LGE_Solar.cs" />
+    <Compile Include="PowerJointAll.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PSMApPlasma.cs" />
+    <Compile Include="AutoValve.cs" />
+    <Compile Include="BrokenDetectFixedType.cs" />
+    <Compile Include="BrokenDetectScanType.cs" />
+    <Compile Include="BS7200.cs" />
+    <Compile Include="Buzzer.cs" />
+    <Compile Include="BuzzerControl.cs" />
+    <Compile Include="CirPumpUnit.cs" />
+    <Compile Include="DryPump.cs" />
+    <Compile Include="RbtHandInterlock.cs" />
+    <Compile Include="Rfg.cs" />
+    <Compile Include="RotaryPump.cs" />
+    <Compile Include="RotaryPumpUnit.cs" />
+    <Compile Include="RPS.cs" />
+    <Compile Include="SafetyRelayUnit.cs" />
+    <Compile Include="SeApPlasma.cs" />
+    <Compile Include="ColorBoard.cs" />
+    <Compile Include="ConiferIDReader.cs" />
+    <Compile Include="CoverSensor.cs" />
+    <Compile Include="CvUnit.cs" />
+    <Compile Include="CvUnitA.cs" />
+    <Compile Include="CvUnits.cs" />
+    <Compile Include="Cylinder.cs" />
+    <Compile Include="CylinderUnit.cs" />
+    <Compile Include="DetergentUnit.cs" />
+    <Compile Include="MixSupplyPumpUnit.cs" />
+    <Compile Include="DevPumpUnit.cs" />
+    <Compile Include="DevTankLevel.cs" />
+    <Compile Include="DevTankUnit.cs" />
+    <Compile Include="DoorSensor.cs" />
+    <Compile Include="DualGlsSensor.cs" />
+    <Compile Include="EmoSensor.cs" />
+    <Compile Include="EqpUnit.cs" />
+    <Compile Include="EqpUnits.cs" />
+    <Compile Include="EuvLamp.cs" />
+    <Compile Include="EuvUnitComm.cs" />
+    <Compile Include="FanFilter.cs" />
+    <Compile Include="BLDC.cs" />
+    <Compile Include="FishHand.cs" />
+    <Compile Include="Forms\FormObjectConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormObjectConfig.Designer.cs">
+      <DependentUpon>FormObjectConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormObjectSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormObjectSelect.Designer.cs">
+      <DependentUpon>FormObjectSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPropertyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPropertyEdit.Designer.cs">
+      <DependentUpon>FormPropertyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormServoSync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormServoSync.Designer.cs">
+      <DependentUpon>FormServoSync.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UIEditorGernericCollection.cs" />
+    <Compile Include="Forms\UIEditorIOSelect.cs" />
+    <Compile Include="Forms\UIEditorObjectConfig.cs" />
+    <Compile Include="Forms\UIEditorObjectSelect.cs" />
+    <Compile Include="Forms\UIEditorPropertyEdit.cs" />
+    <Compile Include="Forms\UIEditorServoSync.cs" />
+    <Compile Include="Forms\ViewObjectConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewObjectConfig.Designer.cs">
+      <DependentUpon>ViewObjectConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewObjectSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewObjectSelect.designer.cs">
+      <DependentUpon>ViewObjectSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauge.cs" />
+    <Compile Include="MixTankItem.cs" />
+    <Compile Include="MixTankUnit.cs" />
+    <Compile Include="ServoMotor_Ec.cs" />
+    <Compile Include="ServoSequence\MP2300SeqSetCalTheta.cs" />
+    <Compile Include="SlaveAnalogInput.cs" />
+    <Compile Include="SlaveAnalogOutput.cs" />
+    <Compile Include="SlaveAP.cs" />
+    <Compile Include="SlaveBLDC.cs" />
+    <Compile Include="SlaveCollection.cs" />
+    <Compile Include="SlaveDigitalInput.cs" />
+    <Compile Include="SlaveDigitalOutput.cs" />
+    <Compile Include="SlaveInverter.cs" />
+    <Compile Include="SlaveServo.cs" />
+    <Compile Include="SmartDamper.cs" />
+    <Compile Include="StockerA.cs" />
+    <Compile Include="TMChamber_PECVD.cs" />
+    <Compile Include="Forms\UIEditorSlaveSelect.cs" />
+    <Compile Include="YaskawaNX100.cs" />
+    <Compile Include="PortUnitA.cs" />
+    <Compile Include="ServoSequence\MP2300SeqRbtMovePointByData.cs" />
+    <Compile Include="ServoSequence\MP2300SeqSetCurPosition.cs" />
+    <Compile Include="ServoSequence\MP2300SeqSetHomeComp.cs" />
+    <Compile Include="ServoSequence\MP2300SeqSetHomeComplete.cs" />
+    <Compile Include="ServoSequence\MP2300SeqSetPos.cs" />
+    <Compile Include="ShutterSequence\ShutterSeqManualAct.cs" />
+    <Compile Include="ShutterSequence\ShutterThreadManualAct.cs" />
+    <Compile Include="ShutterSequence\ShutterSeqOpen.cs" />
+    <Compile Include="ShutterSequence\ShutterSeqClose.cs" />
+    <Compile Include="ShutterUnit.cs" />
+    <Compile Include="ServoMotorMp2300.cs" />
+    <Compile Include="ServoSequence\MP2300SeqClearAxisErr.cs" />
+    <Compile Include="ServoSequence\MP2300SeqHome.cs" />
+    <Compile Include="ServoSequence\MP2300SeqRbtEmo.cs" />
+    <Compile Include="ServoSequence\MP2300SeqRbtEStop.cs" />
+    <Compile Include="ServoSequence\MP2300SeqRbtManualAct.cs" />
+    <Compile Include="ServoSequence\MP2300SeqRbtMoveHome.cs" />
+    <Compile Include="ServoSequence\MP2300SeqRbtMovePoint.cs" />
+    <Compile Include="ServoSequence\MP2300SeqRbtMovePos.cs" />
+    <Compile Include="ServoSequence\MP2300SeqRbtReset.cs" />
+    <Compile Include="ServoSequence\MP2300SeqThreadRbtManualAct.cs" />
+    <Compile Include="ServoSequence\MP2300TagServoData.cs" />
+    <Compile Include="ServoUnitMp2300.cs" />
+    <Compile Include="ServoUnitMp2300s.cs" />
+    <Compile Include="TankLoadCell.cs" />
+    <Compile Include="TransferUnits.cs" />
+    <Compile Include="GlsSensor.cs" />
+    <Compile Include="Heater.cs" />
+    <Compile Include="HeaterUnit.cs" />
+    <Compile Include="HepaFilter.cs" />
+    <Compile Include="Hpmj.cs" />
+    <Compile Include="HpmjItem.cs" />
+    <Compile Include="HpmjItems.cs" />
+    <Compile Include="HpmjItemsHandler.cs" />
+    <Compile Include="InterfaceStep.cs" />
+    <Compile Include="InterfaceSteps.cs" />
+    <Compile Include="Interface\ICollectionFactory.cs" />
+    <Compile Include="Interface\IComponentContainer.cs" />
+    <Compile Include="Interface\IEqpManager.cs" />
+    <Compile Include="Interface\IGlassDataHandler.cs" />
+    <Compile Include="Interface\IJobCondition.cs" />
+    <Compile Include="Interface\IServerManager.cs" />
+    <Compile Include="Inverter.cs" />
+    <Compile Include="IoAnalogInput.cs" />
+    <Compile Include="IoAnalogOutput.cs" />
+    <Compile Include="IoDigitalInput.cs" />
+    <Compile Include="IoDigitalOutput.cs" />
+    <Compile Include="Ionizer.cs" />
+    <Compile Include="Interface\IGenericCollection.cs" />
+    <Compile Include="LeakSensor.cs" />
+    <Compile Include="LevelSensor.cs" />
+    <Compile Include="Mfc.cs" />
+    <Compile Include="MitutoyoRbGapGauge.cs" />
+    <Compile Include="MotorControl.cs" />
+    <Compile Include="PartsItem.cs" />
+    <Compile Include="PartsItems.cs" />
+    <Compile Include="PartsItemsHandler.cs" />
+    <Compile Include="ProcessUnit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pump.cs" />
+    <Compile Include="PumpUnit.cs" />
+    <Compile Include="PumpUnitA.cs" />
+    <Compile Include="RbMotor.cs" />
+    <Compile Include="RbUnit.cs" />
+    <Compile Include="Sensor.cs" />
+    <Compile Include="ServoCvMotor.cs" />
+    <Compile Include="ServoMotor.cs" />
+    <Compile Include="ServoSequence\ServoSeqClearAxisErr.cs" />
+    <Compile Include="ServoSequence\ServoSeqHomeAndIndex.cs" />
+    <Compile Include="ServoSequence\ServoSeqHomeOnly.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtEStop.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtManualAct.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtMoveAT1.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtMoveHome.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtMovePoint.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtMovePos.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtMoveS1.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtReset.cs" />
+    <Compile Include="ServoSequence\ServoSeqUpdatePosition.cs" />
+    <Compile Include="ServoSequence\ServoSeqUpdateStatus.cs" />
+    <Compile Include="ServoSequence\ServoTagServoData.cs" />
+    <Compile Include="ServoSequence\ServoThreadRbtManualAct.cs" />
+    <Compile Include="ServoSequence\ServoThreadRbtUpdateCondition.cs" />
+    <Compile Include="ServoSequence\ServoSeqRbtEmo.cs" />
+    <Compile Include="ServoTilt.cs" />
+    <Compile Include="ServoUnit.cs" />
+    <Compile Include="ServoUnits.cs" />
+    <Compile Include="ShinkoDryCleaner.cs" />
+    <Compile Include="SignalTower.cs" />
+    <Compile Include="ST540.cs" />
+    <Compile Include="TagInterlock.cs" />
+    <Compile Include="TankLevel.cs" />
+    <Compile Include="TankUnit.cs" />
+    <Compile Include="Abstract\_Actuator.cs" />
+    <Compile Include="Abstract\_ActuatorTurn.cs" />
+    <Compile Include="Abstract\_Cylinder.cs" />
+    <Compile Include="Abstract\_DeviceAsm.cs" />
+    <Compile Include="Abstract\_DeviceIo.cs" />
+    <Compile Include="Abstract\_DryCleaner.cs" />
+    <Compile Include="Abstract\_Gauge.cs" />
+    <Compile Include="Abstract\_Heater.cs" />
+    <Compile Include="Abstract\_Lamp.cs" />
+    <Compile Include="Abstract\_Motor.cs" />
+    <Compile Include="Abstract\_Plasma.cs" />
+    <Compile Include="Abstract\_Pump.cs" />
+    <Compile Include="Abstract\_Sensor.cs" />
+    <Compile Include="Abstract\_Tic.cs" />
+    <Compile Include="Abstract\_Valve.cs" />
+    <Compile Include="Abstract\_GenericCollection.cs" />
+    <Compile Include="LevelSensorConfirm.cs" />
+    <Compile Include="IoCollection.cs" />
+    <Compile Include="TransferUnit.cs" />
+    <Compile Include="TransferRobot.cs" />
+    <Compile Include="GantryUnit.cs" />
+    <Compile Include="PowerJoint.cs" />
+    <Compile Include="ServoCheckPoint.cs" />
+    <Compile Include="UnloadLockUnit.cs" />
+    <Compile Include="UshioEuvUnit.cs" />
+    <Compile Include="RfTuner.cs" />
+    <Compile Include="Apc.cs" />
+    <Compile Include="DryPumpUnit.cs" />
+    <Compile Include="DBMotor.cs" />
+    <Compile Include="DBUnit.cs" />
+    <Compile Include="HotWireUnit.cs" />
+    <Compile Include="CirPumpAUnit.cs" />
+    <Compile Include="MeasureTankUnit.cs" />
+    <Compile Include="TankLevelLoadCell.cs" />
+    <Compile Include="DetTankUnit.cs" />
+    <Compile Include="DetSupplyPumpUnit.cs" />
+    <Compile Include="BCRn400k.cs" />
+    <Compile Include="Abstract\_CstMappingUnit.cs" />
+    <Compile Include="CstMappingUnitTakex.cs" />
+    <Compile Include="HmiAutoValve.cs" />
+    <Compile Include="Seren_Rfg.cs" />
+    <Compile Include="RfUnit.cs" />
+    <Compile Include="Yaskawa_BoeHF_Theragen.cs" />
+    <Compile Include="ST590.cs" />
+    <Compile Include="FanFilterControl.cs" />
+    <Compile Include="Abstract\_DeviceSlave.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FormIOConfig.resx">
+      <DependentUpon>FormIOConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormObjectConfig.resx">
+      <DependentUpon>FormObjectConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormObjectSelect.resx">
+      <DependentUpon>FormObjectSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPropertyEdit.resx">
+      <DependentUpon>FormPropertyEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormServoSync.resx">
+      <DependentUpon>FormServoSync.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSlaveConfig.resx">
+      <DependentUpon>FormSlaveConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewObjectConfig.resx">
+      <DependentUpon>ViewObjectConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewObjectSelect.resx">
+      <DependentUpon>ViewObjectSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\Resources\arrow_down.png" />
+    <None Include="Forms\Resources\arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\Dms.Ctl.BrModbus\Dms.Ctl.BrModbus.csproj">
+      <Project>{646d06b4-67a4-4ad8-9342-1011cfbee567}</Project>
+      <Name>Dms.Ctl.BrModbus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\Dms.Ctl.Comm\Dms.Ctl.Comm.csproj">
+      <Project>{15f877cd-e667-4dfd-b0d5-c96e68e3f39f}</Project>
+      <Name>Dms.Ctl.Comm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\Dms.Ctl.MelsecCCLink\Dms.Ctl.MelsecCCLink.csproj">
+      <Project>{2ba218af-ba45-4b5c-9248-239f87362378}</Project>
+      <Name>Dms.Ctl.MelsecCCLink</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\Dms.Ctl.MelsecEtherNet\Dms.Ctl.MelsecEtherNet.csproj">
+      <Project>{53955872-20ed-44cf-b3bf-f7d0b5f5e252}</Project>
+      <Name>Dms.Ctl.MelsecEtherNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\Dms.Ctl.MelsecNet\Dms.Ctl.MelsecNet.csproj">
+      <Project>{13fa901c-da6c-464d-b698-010064af0907}</Project>
+      <Name>Dms.Ctl.MelsecNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\Dms.Ctl.MP2300\Dms.Ctl.MP2300.csproj">
+      <Project>{a49a461a-5a8f-4abf-bb77-9040e1aab8c7}</Project>
+      <Name>Dms.Ctl.MP2300</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\Dms.Ctl.TwinCat\Dms.Ctl.TwinCAT.csproj">
+      <Project>{085ff36d-ae0e-41e4-8ad7-a562285a72fb}</Project>
+      <Name>Dms.Ctl.TwinCAT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\DMS.Ctl.WMXCommon\Dms.Ctl.WMXCommon.csproj">
+      <Project>{85f97872-c03a-47d8-955b-92c34dbdb374}</Project>
+      <Name>Dms.Ctl.WMXCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Ctl%28Dll%29\Dms.Ctl.WMX\Dms.Ctl.WMX.csproj">
+      <Project>{6011a811-2820-48fa-bd13-5a443746bbd2}</Project>
+      <Name>Dms.Ctl.WMX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.Alarm\Dms.Data.Alarm.csproj">
+      <Project>{978a2edb-33e4-4a0c-864e-dbc4d14a52ef}</Project>
+      <Name>Dms.Data.Alarm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.DataProvider\Dms.Data.DataProvider.csproj">
+      <Project>{feb17e40-e9f9-4736-86b7-ed6a6cfdf933}</Project>
+      <Name>Dms.Data.DataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.GlassData\Dms.Data.GlassData.csproj">
+      <Project>{34f81f09-6b94-4f46-8711-c555fa21e773}</Project>
+      <Name>Dms.Data.GlassData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.Recipe\Dms.Data.Recipe.csproj">
+      <Project>{89e13edf-0c74-4b9f-a0ef-a90901737724}</Project>
+      <Name>Dms.Data.Recipe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.SetupItem\Dms.Data.SetupItem.csproj">
+      <Project>{69d50944-7abf-4b3e-803e-5d3c0b6e886a}</Project>
+      <Name>Dms.Data.SetupItem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Util\Dms.Util.IODefine\Dms.Util.IODefine.csproj">
+      <Project>{34e96022-b2c5-4d00-9198-652bcc2b076c}</Project>
+      <Name>Dms.Util.IODefine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

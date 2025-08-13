@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApdItemsHandler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <ApdItems>
+      <PositionId>-1</PositionId>
+      <Items>
+        <Items>
+          <anyType xsi:type="ApdItem">
+            <Id>0</Id>
+            <Name>GLS_START</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>false</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType />
+              <DeviceType>ApdItem</DeviceType>
+              <DeviceName />
+            </ReferenceTag>
+            <ItemUnit>None</ItemUnit>
+            <WordCount>7</WordCount>
+            <StartAddress>0</StartAddress>
+            <StartTpdAddress>0</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>20250409120111</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>1</Id>
+            <Name>GLS_END</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>false</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType />
+              <DeviceType>ApdItem</DeviceType>
+              <DeviceName />
+            </ReferenceTag>
+            <ItemUnit>None</ItemUnit>
+            <WordCount>7</WordCount>
+            <StartAddress>7</StartAddress>
+            <StartTpdAddress>0</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>20250409120325</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>2</Id>
+            <Name>EUV_EXT1</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>EUV Unit Exhaust1  Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Pa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>14</StartAddress>
+            <StartTpdAddress>0</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>366.1</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>3</Id>
+            <Name>EUV_EXT2</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>EUV Unit Exhaust2  Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Pa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>17</StartAddress>
+            <StartTpdAddress>3</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>366.3</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>4</Id>
+            <Name>IN_ION_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>IN Unit  Ionizer CDA Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>20</StartAddress>
+            <StartTpdAddress>6</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>488.4</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>5</Id>
+            <Name>EUV_ION_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>EUV Unit Ionizer CDA Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>23</StartAddress>
+            <StartTpdAddress>9</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>488.4</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>6</Id>
+            <Name>EUV_CDA_FLOW </Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>EUV Unit CDA Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>26</StartAddress>
+            <StartTpdAddress>12</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>489.9</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>7</Id>
+            <Name>EUV_N2_FLOW </Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>EUV Unit N2 Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>29</StartAddress>
+            <StartTpdAddress>15</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>489.9</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>8</Id>
+            <Name>RB_U_EXT</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit Exhaust  Pressue Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Pa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>32</StartAddress>
+            <StartTpdAddress>18</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>366.1</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>9</Id>
+            <Name>RB_UP_AC_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit Up AC Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>kPa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>35</StartAddress>
+            <StartTpdAddress>21</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>488.4</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>10</Id>
+            <Name>RB_LO_AC_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit Lo AC Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>kPa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>38</StartAddress>
+            <StartTpdAddress>24</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>526.5</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>11</Id>
+            <Name>RB_SWR_LO_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit Shower Low Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>41</StartAddress>
+            <StartTpdAddress>27</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>63.5</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>12</Id>
+            <Name>RB_SWR_UP_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit Shower Up Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>44</StartAddress>
+            <StartTpdAddress>30</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>0</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>13</Id>
+            <Name>RB_MJ_CDA_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit MJ CDA Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>kPa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>47</StartAddress>
+            <StartTpdAddress>33</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>488.4</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>14</Id>
+            <Name>RB_MJ_DI_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit MJ DI Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>50</StartAddress>
+            <StartTpdAddress>36</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>63.5</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>15</Id>
+            <Name>RB_AQK_SH_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit AQK Shower  Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>53</StartAddress>
+            <StartTpdAddress>39</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>39.1</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>16</Id>
+            <Name>RB_ROLL_WET_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>RB Unit Roll Wet Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>56</StartAddress>
+            <StartTpdAddress>42</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>63.5</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>17</Id>
+            <Name>FR_U_EXT</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit Exhaust  Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Pa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>59</StartAddress>
+            <StartTpdAddress>45</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>366.1</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>18</Id>
+            <Name>FR_L_EXT</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ Exhaust Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Pa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>62</StartAddress>
+            <StartTpdAddress>48</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>366.2</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>19</Id>
+            <Name>FR_SWR_LO_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit Shower  Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>65</StartAddress>
+            <StartTpdAddress>51</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value />
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>20</Id>
+            <Name>FR_SWR_UP_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit Shower Up Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>68</StartAddress>
+            <StartTpdAddress>54</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>58.6</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>21</Id>
+            <Name>FR_AQ_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit AQK Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>71</StartAddress>
+            <StartTpdAddress>57</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>39.1</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>22</Id>
+            <Name>HJ_CO2_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ CO2 Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Bar</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>74</StartAddress>
+            <StartTpdAddress>60</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>2.001</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>23</Id>
+            <Name>HJ_DI_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ Main DI Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Bar</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>77</StartAddress>
+            <StartTpdAddress>63</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>2.001</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>24</Id>
+            <Name>HJ_DI_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ Shower Flowrate Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>80</StartAddress>
+            <StartTpdAddress>66</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>20.01</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>25</Id>
+            <Name>HJ_RES</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ DI Resistance Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Mohm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>83</StartAddress>
+            <StartTpdAddress>69</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>20.01</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>26</Id>
+            <Name>HJ_IN_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ Filter In Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Bar</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>86</StartAddress>
+            <StartTpdAddress>72</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>200.1</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>27</Id>
+            <Name>HJ_OUT_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ Filter Out Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Bar</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>89</StartAddress>
+            <StartTpdAddress>75</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>200.1</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>28</Id>
+            <Name>HJ_CO2_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ CO2 Flowrate Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>92</StartAddress>
+            <StartTpdAddress>78</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>6.1</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>29</Id>
+            <Name>HJ_CO2_PRS2</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>false</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>FR Unit HPMJ CO2 Pressure2 Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Bar</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>95</StartAddress>
+            <StartTpdAddress>81</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>15.259</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>30</Id>
+            <Name>AK_U_EXT1</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>AK Unit Up Exhaust 1 Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Pa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>98</StartAddress>
+            <StartTpdAddress>84</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>381.2</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>31</Id>
+            <Name>AK_U_EXT2</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>AK Unit Up Exhaust 2 Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Pa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>101</StartAddress>
+            <StartTpdAddress>87</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>317.4</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>32</Id>
+            <Name>AK_L_EXT</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>AK Unit Lo Exhaust Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>Pa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>104</StartAddress>
+            <StartTpdAddress>90</StartTpdAddress>
+            <Rate>0.1</Rate>
+            <Format>NUMBER</Format>
+            <Value>416.7</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>33</Id>
+            <Name>AK_U_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>AK Unit Up Air Knife Flowrate Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>107</StartAddress>
+            <StartTpdAddress>93</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>1464.5</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>34</Id>
+            <Name>AK_L_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>AK Unit Lo Air Knife Flowrate Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>110</StartAddress>
+            <StartTpdAddress>96</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>1464.5</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>35</Id>
+            <Name>AK_U_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>AK Unit Up Air Knife Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>kPa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>113</StartAddress>
+            <StartTpdAddress>99</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>482</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>36</Id>
+            <Name>AK_L_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>AK Unit Lo Air Knife Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>kPa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>116</StartAddress>
+            <StartTpdAddress>102</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>493.7</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>37</Id>
+            <Name>UL_IN_ION_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>UL Unit In Ionizer CDA Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>119</StartAddress>
+            <StartTpdAddress>105</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>488.4</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>38</Id>
+            <Name>UL_OUT_ION_FLW</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>UL Unit Out Ionizer CDA Flow Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>lpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>122</StartAddress>
+            <StartTpdAddress>108</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>488.4</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>39</Id>
+            <Name>DRV_PRS</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>Gauge</FamilyType>
+              <DeviceType>Gauge</DeviceType>
+              <DeviceName>Driving Air Pressure Gauge</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>1</Id>
+              <Key>CURVAL</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>kPa</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>125</StartAddress>
+            <StartTpdAddress>111</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>488.4</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>40</Id>
+            <Name>RB_RB1_SPD</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType />
+              <DeviceType>ApdItem</DeviceType>
+              <DeviceName />
+            </ReferenceTag>
+            <ItemUnit>rpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>128</StartAddress>
+            <StartTpdAddress>114</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>400</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>41</Id>
+            <Name>RB_RB2_SPD</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType />
+              <DeviceType>ApdItem</DeviceType>
+              <DeviceName />
+            </ReferenceTag>
+            <ItemUnit>rpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>131</StartAddress>
+            <StartTpdAddress>117</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>400</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>42</Id>
+            <Name>RB_RB3_SPD</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType />
+              <DeviceType>ApdItem</DeviceType>
+              <DeviceName />
+            </ReferenceTag>
+            <ItemUnit>rpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>134</StartAddress>
+            <StartTpdAddress>120</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>400</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>43</Id>
+            <Name>RB_RB4_SPD</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType />
+              <DeviceType>ApdItem</DeviceType>
+              <DeviceName />
+            </ReferenceTag>
+            <ItemUnit>rpm</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>137</StartAddress>
+            <StartTpdAddress>123</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>400</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>44</Id>
+            <Name>EUV1_ ILLUMIN</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>_Device</FamilyType>
+              <DeviceType>GenInfo</DeviceType>
+              <DeviceName>EuvLampInt1</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>0</Id>
+              <Key>VALUE</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>mW</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>140</StartAddress>
+            <StartTpdAddress>126</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>0</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>45</Id>
+            <Name>EUV2_ ILLUMIN</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>_Device</FamilyType>
+              <DeviceType>GenInfo</DeviceType>
+              <DeviceName>EuvLampInt2</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>0</Id>
+              <Key>VALUE</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>mW</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>143</StartAddress>
+            <StartTpdAddress>129</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>0</Value>
+          </anyType>
+          <anyType xsi:type="ApdItem">
+            <Id>46</Id>
+            <Name>EUV3_ ILLUMIN</Name>
+            <ReportEnable>true</ReportEnable>
+            <LpdReportEnable>false</LpdReportEnable>
+            <TpdReportEnable>true</TpdReportEnable>
+            <ReferenceTag>
+              <FamilyType>_Device</FamilyType>
+              <DeviceType>GenInfo</DeviceType>
+              <DeviceName>EuvLampInt3</DeviceName>
+            </ReferenceTag>
+            <ReferenceTagDescriptor>
+              <Id>0</Id>
+              <Key>VALUE</Key>
+            </ReferenceTagDescriptor>
+            <ItemUnit>mW</ItemUnit>
+            <WordCount>3</WordCount>
+            <StartAddress>146</StartAddress>
+            <StartTpdAddress>132</StartTpdAddress>
+            <Rate>1</Rate>
+            <Format>NUMBER</Format>
+            <Value>0</Value>
+          </anyType>
+        </Items>
+      </Items>
+    </ApdItems>
+  </Items>
+</ApdItemsHandler>

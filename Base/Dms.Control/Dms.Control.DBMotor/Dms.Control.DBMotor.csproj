@@ -1,0 +1,158 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAF5857F-B1B4-4B9B-8A11-0B44E63940BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.DBMotor</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DBMotor.Designer.cs">
+      <DependentUpon>DBMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBMotorOperation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DBMotorOperation.designer.cs">
+      <DependentUpon>DBMotorOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgDBMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgDBMotor.designer.cs">
+      <DependentUpon>DlgDBMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DBMotor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBMotorOperation.resx">
+      <DependentUpon>DBMotorOperation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgDBMotor.resx">
+      <DependentUpon>DlgDBMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB1_D.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB2_D.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB3_D.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB4_D.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB5_D.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB6_D.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxDISKBRUSHLib">
+      <Guid>{F5B5206D-A619-4A9A-B902-A0D881FC2B4A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DISKBRUSHLib">
+      <Guid>{F5B5206D-A619-4A9A-B902-A0D881FC2B4A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Server\Dms.Server\Dms.Server.csproj">
+      <Project>{E1D33C09-A135-4865-9A01-0FF2EAF45350}</Project>
+      <Name>Dms.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.Client\Dms.Client.csproj">
+      <Project>{065CE86F-CAEC-463F-8D13-3D0F86B061B6}</Project>
+      <Name>Dms.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{BC761389-B4DE-4459-8530-BDE2973A7A83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

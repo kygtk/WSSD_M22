@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IoDefines xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WireNumberMode>ByOct</WireNumberMode>
+  <SimulateController>false</SimulateController>
+  <Container>
+    <IoNode xsi:type="IoNodeMovensysEcMaster">
+      <Id>0</Id>
+      <StructureType>MasterSlave</StructureType>
+      <Terminals />
+      <Slaves>
+        <EcSlave xsi:type="BHY_IO2_EC_DI16NT">
+          <SlaveNo>-1</SlaveNo>
+          <AliasNo>37</AliasNo>
+          <SlaveType>DI</SlaveType>
+          <VendorId>38229</VendorId>
+          <VendorName>MOVENSYS</VendorName>
+          <ProductCode>268435457</ProductCode>
+          <ProductName>BHY-IO2-EC-DI16NT</ProductName>
+          <Description>Digital Input 16</Description>
+          <InSizeByte>0</InSizeByte>
+          <InAddressByte>0</InAddressByte>
+          <OutSizeByte>0</OutSizeByte>
+          <OutAddressByte>0</OutAddressByte>
+          <InChannelCount>16</InChannelCount>
+          <InChannels>
+            <EcSlaveItem_DI>
+              <Id>0</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>0</Channel>
+              <Name>di_Test_EMO</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>1</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>1</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>2</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>2</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>3</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>3</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>4</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>4</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>5</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>5</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>6</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>6</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>7</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>7</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>8</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>8</Channel>
+              <Name>di_AlarmResetTest</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>9</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>9</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>10</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>10</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>11</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>11</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>12</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>12</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>13</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>13</Channel>
+              <Name>di__</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>A</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>14</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>14</Channel>
+              <Name>di_Test_BLDC_Cp_On</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>B</ActiveType>
+            </EcSlaveItem_DI>
+            <EcSlaveItem_DI>
+              <Id>15</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>37</AliasNo>
+              <Channel>15</Channel>
+              <Name>di_Test_BLDC2_Cp_On</Name>
+              <Description />
+              <SlaveItemType>DI</SlaveItemType>
+              <ActiveType>B</ActiveType>
+            </EcSlaveItem_DI>
+          </InChannels>
+        </EcSlave>
+        <EcSlave xsi:type="BHY_IO2_EC_DO16NT">
+          <SlaveNo>-1</SlaveNo>
+          <AliasNo>84</AliasNo>
+          <SlaveType>DO</SlaveType>
+          <VendorId>38229</VendorId>
+          <VendorName>MOVENSYS</VendorName>
+          <ProductCode>268435461</ProductCode>
+          <ProductName>BHY-IO2-EC-DO16NT</ProductName>
+          <Description>Digital Output 16</Description>
+          <InSizeByte>0</InSizeByte>
+          <InAddressByte>0</InAddressByte>
+          <OutSizeByte>0</OutSizeByte>
+          <OutAddressByte>0</OutAddressByte>
+          <OutChannelCount>16</OutChannelCount>
+          <OutChannels>
+            <EcSlaveItem_DO>
+              <Id>0</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>0</Channel>
+              <Name>do_TowerLampB</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>1</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>1</Channel>
+              <Name>do_TowerLampG</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>2</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>2</Channel>
+              <Name>do_TowerLampR</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>3</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>3</Channel>
+              <Name>do_TowerLampY</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>4</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>4</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>5</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>5</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>6</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>6</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>7</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>7</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>8</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>8</Channel>
+              <Name>do_AlarmResetTest</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>9</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>9</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>10</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>10</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>11</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>11</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>12</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>12</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>13</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>13</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>14</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>14</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+            <EcSlaveItem_DO>
+              <Id>15</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>84</AliasNo>
+              <Channel>15</Channel>
+              <Name>do__</Name>
+              <Description />
+              <SlaveItemType>DO</SlaveItemType>
+            </EcSlaveItem_DO>
+          </OutChannels>
+        </EcSlave>
+        <EcSlave xsi:type="ESD_EC_120_C">
+          <SlaveNo>-1</SlaveNo>
+          <AliasNo>4</AliasNo>
+          <SlaveType>BLDC</SlaveType>
+          <VendorId>262144000</VendorId>
+          <VendorName>Fastech</VendorName>
+          <ProductCode>4004</ProductCode>
+          <ProductName>ESD-EC-120-C</ProductName>
+          <Description>Fastech BLDC</Description>
+          <InSizeByte>0</InSizeByte>
+          <InAddressByte>0</InAddressByte>
+          <OutSizeByte>0</OutSizeByte>
+          <OutAddressByte>0</OutAddressByte>
+          <BLDCCount>1</BLDCCount>
+          <BLDCs>
+            <EcSlaveItem_BLDC>
+              <Id>0</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>4</AliasNo>
+              <Channel>0</Channel>
+              <Name>bldc_Test</Name>
+              <Description />
+              <SlaveItemType>BLDC</SlaveItemType>
+            </EcSlaveItem_BLDC>
+          </BLDCs>
+        </EcSlave>
+        <EcSlave xsi:type="MADLN05BE">
+          <SlaveNo>-1</SlaveNo>
+          <AliasNo>17</AliasNo>
+          <SlaveType>Servo</SlaveType>
+          <VendorId>1647</VendorId>
+          <VendorName>Panasonic Industry Co., Ltd.</VendorName>
+          <ProductCode>1614282756</ProductCode>
+          <ProductName>MADLN05BE</ProductName>
+          <Description>Panasonic Servo Motor</Description>
+          <ServoCount>1</ServoCount>
+          <Servos>
+            <EcSlaveItem_Servo>
+              <Id>0</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>17</AliasNo>
+              <Channel>0</Channel>
+              <Name>servo_Test</Name>
+              <Description />
+              <SlaveItemType>Servo</SlaveItemType>
+              <AxisIndex>0</AxisIndex>
+            </EcSlaveItem_Servo>
+          </Servos>
+          <AxisIndex>0</AxisIndex>
+        </EcSlave>
+        <EcSlave xsi:type="DMS_AP">
+          <SlaveNo>-1</SlaveNo>
+          <AliasNo>1</AliasNo>
+          <SlaveType>AP</SlaveType>
+          <VendorId>3868</VendorId>
+          <VendorName>DMS Co,. Ltd.</VendorName>
+          <ProductCode>268435712</ProductCode>
+          <ProductName>EtherCAT_Slave_AP</ProductName>
+          <Description>Wireless AP 16</Description>
+          <InSizeByte>0</InSizeByte>
+          <InAddressByte>0</InAddressByte>
+          <OutSizeByte>0</OutSizeByte>
+          <OutAddressByte>0</OutAddressByte>
+          <ChannelCount>16</ChannelCount>
+          <Channels>
+            <EcSlaveItem_AP>
+              <Id>0</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>0</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>1</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>1</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>2</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>2</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>3</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>3</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>4</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>4</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>5</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>5</Channel>
+              <Name>ap_D40A_Test</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>D40A</PeerType>
+              <PeerId>112</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>6</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>6</Channel>
+              <Name>ap_D4SL_Test</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>D4SL</PeerType>
+              <PeerId>127</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>7</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>7</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>8</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>8</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>9</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>9</Channel>
+              <Name>ap_Manometer_Test</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Manometer</PeerType>
+              <PeerId>1</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>10</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>10</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>11</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>11</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>12</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>12</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>13</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>13</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>14</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>14</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+            <EcSlaveItem_AP>
+              <Id>15</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>1</AliasNo>
+              <Channel>15</Channel>
+              <Name>ap__</Name>
+              <Description />
+              <SlaveItemType>AP</SlaveItemType>
+              <PeerType>Null</PeerType>
+              <PeerId>0</PeerId>
+            </EcSlaveItem_AP>
+          </Channels>
+        </EcSlave>
+        <EcSlave xsi:type="YCS_BMC_XBD1">
+          <SlaveNo>-1</SlaveNo>
+          <AliasNo>5</AliasNo>
+          <SlaveType>BLDC</SlaveType>
+          <VendorId>128</VendorId>
+          <VendorName>YDIIT</VendorName>
+          <ProductCode>3</ProductCode>
+          <ProductName>YCS-BMC-XBD1</ProductName>
+          <Description>YDIIT BLDC Motor Control</Description>
+          <InSizeByte>0</InSizeByte>
+          <InAddressByte>0</InAddressByte>
+          <OutSizeByte>0</OutSizeByte>
+          <OutAddressByte>0</OutAddressByte>
+          <BLDCCount>1</BLDCCount>
+          <BLDCs>
+            <EcSlaveItem_BLDC>
+              <Id>1</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>5</AliasNo>
+              <Channel>0</Channel>
+              <Name>bldc_Test2_YDIIT</Name>
+              <Description />
+              <SlaveItemType>BLDC</SlaveItemType>
+            </EcSlaveItem_BLDC>
+          </BLDCs>
+        </EcSlave>
+        <EcSlave xsi:type="S100">
+          <SlaveNo>-1</SlaveNo>
+          <AliasNo>111</AliasNo>
+          <SlaveType>Inverter</SlaveType>
+          <VendorId>1505</VendorId>
+          <VendorName>LSIS</VendorName>
+          <ProductCode>1679097908</ProductCode>
+          <ProductName>S100</ProductName>
+          <Description>LS Inverter</Description>
+          <InverterCount>1</InverterCount>
+          <Inverters>
+            <EcSlaveItem_Inverter>
+              <Id>0</Id>
+              <SlaveNo>-1</SlaveNo>
+              <AliasNo>111</AliasNo>
+              <Channel>0</Channel>
+              <Name>inverter_Test</Name>
+              <Description />
+              <SlaveItemType>Inverter</SlaveItemType>
+            </EcSlaveItem_Inverter>
+          </Inverters>
+        </EcSlave>
+      </Slaves>
+    </IoNode>
+  </Container>
+  <BusType>MovensysEtherCAT</BusType>
+</IoDefines>

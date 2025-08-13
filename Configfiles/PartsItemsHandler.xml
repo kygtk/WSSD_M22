@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PartsItemsHandler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <Items>
+      <Items>
+        <anyType xsi:type="PartsItem">
+          <Id>0</Id>
+          <Name>RB AC&amp; Ionizer Filter</Name>
+          <MaxGlsCount>2000</MaxGlsCount>
+          <MaxUsedTime>1000</MaxUsedTime>
+          <CurGlsCount>483</CurGlsCount>
+          <CurUsedTime>396</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>1</Id>
+          <Name>RB1 Up Brush</Name>
+          <MaxGlsCount>350000</MaxGlsCount>
+          <MaxUsedTime>4320</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>276</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>2</Id>
+          <Name>RB1 Lo Brush</Name>
+          <MaxGlsCount>350000</MaxGlsCount>
+          <MaxUsedTime>4320</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>276</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>3</Id>
+          <Name>RB2 Up Brush</Name>
+          <MaxGlsCount>350000</MaxGlsCount>
+          <MaxUsedTime>4320</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>276</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>4</Id>
+          <Name>RB2 Lo Brush</Name>
+          <MaxGlsCount>350000</MaxGlsCount>
+          <MaxUsedTime>4320</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>276</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>5</Id>
+          <Name>RB MJ CDA Filter</Name>
+          <MaxGlsCount>350000</MaxGlsCount>
+          <MaxUsedTime>4320</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>359</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>6</Id>
+          <Name>RB Shw Pump Filter</Name>
+          <MaxGlsCount>58000</MaxGlsCount>
+          <MaxUsedTime>2160</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>335</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>7</Id>
+          <Name>FR Shw DI Filter</Name>
+          <MaxGlsCount>58000</MaxGlsCount>
+          <MaxUsedTime>2160</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>362</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>8</Id>
+          <Name>AK CDA Filter1</Name>
+          <MaxGlsCount>350000</MaxGlsCount>
+          <MaxUsedTime>4320</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>1604</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>9</Id>
+          <Name>AK CDA Filter2</Name>
+          <MaxGlsCount>350000</MaxGlsCount>
+          <MaxUsedTime>4320</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>1604</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>10</Id>
+          <Name>EUV N2 IN Filter</Name>
+          <MaxGlsCount>2000</MaxGlsCount>
+          <MaxUsedTime>1000</MaxUsedTime>
+          <CurGlsCount>483</CurGlsCount>
+          <CurUsedTime>1</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>11</Id>
+          <Name>Hard Disk</Name>
+          <MaxGlsCount>100000</MaxGlsCount>
+          <MaxUsedTime>100000</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>1837</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>12</Id>
+          <Name>RAID</Name>
+          <MaxGlsCount>100000</MaxGlsCount>
+          <MaxUsedTime>100000</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>1837</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>13</Id>
+          <Name>FAN</Name>
+          <MaxGlsCount>100000</MaxGlsCount>
+          <MaxUsedTime>100000</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>1837</CurUsedTime>
+        </anyType>
+        <anyType xsi:type="PartsItem">
+          <Id>14</Id>
+          <Name>CMOS Battery</Name>
+          <MaxGlsCount>100000</MaxGlsCount>
+          <MaxUsedTime>100000</MaxUsedTime>
+          <CurGlsCount>1730</CurGlsCount>
+          <CurUsedTime>1837</CurUsedTime>
+        </anyType>
+      </Items>
+    </Items>
+  </Items>
+  <UseGlassCount>true</UseGlassCount>
+</PartsItemsHandler>

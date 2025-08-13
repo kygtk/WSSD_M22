@@ -1,0 +1,465 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D90D456-25F2-4987-9DEB-B7DD6C560255}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.ViewObjects</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Control.DoubleBufferedGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Ctl.MP2300, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.DeviceLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Mitsubishi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.PcSystemInfo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmTabHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlarmTabHistory.Designer.cs">
+      <DependentUpon>AlarmTabHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmTabList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlarmTabList.Designer.cs">
+      <DependentUpon>AlarmTabList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTabSlaveCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemTabSlaveCtrl.Designer.cs">
+      <DependentUpon>SystemTabSlaveCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCstSlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewCstSlot.Designer.cs">
+      <DependentUpon>ViewCstSlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgMappingUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgMappingUnit.Designer.cs">
+      <DependentUpon>DlgMappingUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabProcessDataCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabProcessDataCtrl.Designer.cs">
+      <DependentUpon>JobsTabProcessDataCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPortUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewPortUnit.Designer.cs">
+      <DependentUpon>ViewPortUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PositionPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PositionPicker.Designer.cs">
+      <DependentUpon>PositionPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeTabOneRecipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecipeTabOneRecipe.Designer.cs">
+      <DependentUpon>RecipeTabOneRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeTabRecipes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecipeTabRecipes.Designer.cs">
+      <DependentUpon>RecipeTabRecipes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServoTabMainCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServoTabMainCtrl.designer.cs">
+      <DependentUpon>ServoTabMainCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServoTabMp2300Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServoTabMp2300Ctrl.Designer.cs">
+      <DependentUpon>ServoTabMp2300Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServoTabMp2300MapDataCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServoTabMp2300MapDataCtrl.Designer.cs">
+      <DependentUpon>ServoTabMp2300MapDataCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabCvDistance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabCvDistance.Designer.cs">
+      <DependentUpon>SetupTabCvDistance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabCvMotors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabCvMotors.Designer.cs">
+      <DependentUpon>SetupTabCvMotors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabFtp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabFtp.Designer.cs">
+      <DependentUpon>SetupTabFtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabGaugeInterlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabGaugeInterlock.Designer.cs">
+      <DependentUpon>SetupTabGaugeInterlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabGeneral.Designer.cs">
+      <DependentUpon>SetupTabGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabHpmj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabHpmj.Designer.cs">
+      <DependentUpon>SetupTabHpmj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabHsms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabHsms.Designer.cs">
+      <DependentUpon>SetupTabHsms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabInterface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabInterface.Designer.cs">
+      <DependentUpon>SetupTabInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabSensorInterlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabSensorInterlock.Designer.cs">
+      <DependentUpon>SetupTabSensorInterlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTabIOCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemTabIOCtrl.Designer.cs">
+      <DependentUpon>SystemTabIOCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewApdItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewApdItem.Designer.cs">
+      <DependentUpon>ViewApdItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDeviceIo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewDeviceIo.Designer.cs">
+      <DependentUpon>ViewDeviceIo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMelsec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewMelsec.Designer.cs">
+      <DependentUpon>ViewMelsec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModbus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewModbus.Designer.cs">
+      <DependentUpon>ViewModbus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPartsLifeTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewPartsLifeTime.Designer.cs">
+      <DependentUpon>ViewPartsLifeTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPcSystemAPC620.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewPcSystemAPC620.Designer.cs">
+      <DependentUpon>ViewPcSystemAPC620.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPcSystemGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewPcSystemGeneral.Designer.cs">
+      <DependentUpon>ViewPcSystemGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgBCRUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgBCRUnit.Designer.cs">
+      <DependentUpon>DlgBCRUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSalience.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewSalience.Designer.cs">
+      <DependentUpon>ViewSalience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCstSlotSeparator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewCstSlotSeparator.Designer.cs">
+      <DependentUpon>ViewCstSlotSeparator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupTabLoader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupTabLoader.Designer.cs">
+      <DependentUpon>SetupTabLoader.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlarmTabHistory.resx">
+      <DependentUpon>AlarmTabHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmTabList.resx">
+      <DependentUpon>AlarmTabList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTabSlaveCtrl.resx">
+      <DependentUpon>SystemTabSlaveCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCstSlot.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewCstSlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgMappingUnit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DlgMappingUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabProcessDataCtrl.resx">
+      <DependentUpon>JobsTabProcessDataCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPortUnit.resx">
+      <DependentUpon>ViewPortUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositionPicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PositionPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeTabOneRecipe.resx">
+      <DependentUpon>RecipeTabOneRecipe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeTabRecipes.resx">
+      <DependentUpon>RecipeTabRecipes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServoTabMainCtrl.resx">
+      <DependentUpon>ServoTabMainCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServoTabMp2300Ctrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ServoTabMp2300Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServoTabMp2300MapDataCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ServoTabMp2300MapDataCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabCvDistance.resx">
+      <DependentUpon>SetupTabCvDistance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabCvMotors.resx">
+      <DependentUpon>SetupTabCvMotors.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabFtp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetupTabFtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabGaugeInterlock.resx">
+      <DependentUpon>SetupTabGaugeInterlock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabGeneral.resx">
+      <DependentUpon>SetupTabGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabHpmj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetupTabHpmj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabHsms.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetupTabHsms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabInterface.resx">
+      <DependentUpon>SetupTabInterface.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabSensorInterlock.resx">
+      <DependentUpon>SetupTabSensorInterlock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTabIOCtrl.resx">
+      <DependentUpon>SystemTabIOCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewApdItem.resx">
+      <DependentUpon>ViewApdItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDeviceIo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewDeviceIo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMelsec.resx">
+      <DependentUpon>ViewMelsec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModbus.resx">
+      <DependentUpon>ViewModbus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPartsLifeTime.resx">
+      <DependentUpon>ViewPartsLifeTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPcSystemAPC620.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewPcSystemAPC620.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPcSystemGeneral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewPcSystemGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgBCRUnit.resx">
+      <DependentUpon>DlgBCRUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSalience.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewSalience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCstSlotSeparator.resx">
+      <DependentUpon>ViewCstSlotSeparator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupTabLoader.resx">
+      <DependentUpon>SetupTabLoader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Client\Dms.Client.csproj">
+      <Project>{065ce86f-caec-463f-8d13-3d0f86b061b6}</Project>
+      <Name>Dms.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.DataProvider\Dms.Data.Alarm\Dms.Data.Alarm.csproj">
+      <Project>{978a2edb-33e4-4a0c-864e-dbc4d14a52ef}</Project>
+      <Name>Dms.Data.Alarm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.DataProvider\Dms.Data.Recipe\Dms.Data.Recipe.csproj">
+      <Project>{89e13edf-0c74-4b9f-a0ef-a90901737724}</Project>
+      <Name>Dms.Data.Recipe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.DataProvider\Dms.Data.SetupItem\Dms.Data.SetupItem.csproj">
+      <Project>{69d50944-7abf-4b3e-803e-5d3c0b6e886a}</Project>
+      <Name>Dms.Data.SetupItem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.ModbusDevices\Dms.ModbusDevices.csproj">
+      <Project>{88ce7960-60fe-4af9-8b8a-b2565b8aa446}</Project>
+      <Name>Dms.ModbusDevices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.ServerCommon\Dms.ServerCommon.csproj">
+      <Project>{9E0F819E-7F99-425D-9903-3CADA8FD0B5E}</Project>
+      <Name>Dms.ServerCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.Util\Dms.Util.IODefine\Dms.Util.IODefine.csproj">
+      <Project>{34e96022-b2c5-4d00-9198-652bcc2b076c}</Project>
+      <Name>Dms.Util.IODefine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

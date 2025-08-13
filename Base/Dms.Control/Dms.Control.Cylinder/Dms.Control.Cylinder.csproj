@@ -1,0 +1,228 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11254E10-0EBA-42E5-8705-832B9C384530}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.Cylinder</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cylinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cylinder.Designer.cs">
+      <DependentUpon>Cylinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CylinderOperateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CylinderOperateForm.Designer.cs">
+      <DependentUpon>CylinderOperateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cylinder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Cylinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CylinderOperateForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CylinderOperateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_chuck_left_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_chuck_left_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_chuck_none.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_chuck_right_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_left_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_left_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_lift_down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_lift_none.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_lift_up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_lo_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_low_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_none.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_right_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_right_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_down_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_down_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_down_none.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_left_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_left_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_left_none.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_right_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_right_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_right_none.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_up_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_up_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_simple_up_none.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_up_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_up_fw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmp00003.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Client\Dms.Client.csproj">
+      <Project>{065ce86f-caec-463f-8d13-3d0f86b061b6}</Project>
+      <Name>Dms.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{BC761389-B4DE-4459-8530-BDE2973A7A83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyl_chuck_right_bw.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Cylinder.ico" />
+    <Content Include="Resources\cyl_chuck_dn.bmp" />
+    <Content Include="Resources\cyl_chuck_up.bmp" />
+    <None Include="Resources\cyl_left_c.bmp" />
+    <None Include="Resources\cyl_dn_o.bmp" />
+    <None Include="Resources\cyl_dn_c.bmp" />
+    <None Include="Resources\cyl_up_o.bmp" />
+    <None Include="Resources\cyl_up_c.bmp" />
+    <None Include="Resources\cyl_right_o.bmp" />
+    <None Include="Resources\cyl_right_c.bmp" />
+    <None Include="Resources\cyl_left_o.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,125 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39C70277-9C3F-4377-B2E0-63A605FC69B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.PmChamber</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Assembly\Dms.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PmChamber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PmChamber.Designer.cs">
+      <DependentUpon>PmChamber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PmChamberPressureState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PmChamberPressureState.Designer.cs">
+      <DependentUpon>PmChamberPressureState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PmChamberProcessState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PmChamberProcessState.Designer.cs">
+      <DependentUpon>PmChamberProcessState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PmChamberState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PmChamberState.Designer.cs">
+      <DependentUpon>PmChamberState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PmChamber.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PmChamber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PmChamberPressureState.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PmChamberPressureState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PmChamberProcessState.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PmChamberProcessState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PmChamberState.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PmChamberState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dms.Control.DataGridViewProgressBar\Dms.Control.DataGridViewProgressBar.csproj">
+      <Project>{0B9BDF9A-AEE8-4098-92BE-7A2C4C7A9669}</Project>
+      <Name>Dms.Control.DataGridViewProgressBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.Description\Dms.Control.Description.csproj">
+      <Project>{1D8C3753-5820-4A5C-84F3-FF5A37226C6C}</Project>
+      <Name>Dms.Control.Description</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Control.DoubleBufferedGridView\Dms.Control.DoubleBufferedGridView.csproj">
+      <Project>{1E5EBD94-D93E-4F7A-9CE8-40FD2D432035}</Project>
+      <Name>Dms.Control.DoubleBufferedGridView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

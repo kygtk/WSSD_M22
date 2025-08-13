@@ -1,0 +1,998 @@
+﻿namespace Dms.Control
+{
+    partial class ServoTabMp2300Ctrl
+    {
+        /// <summary> 
+        /// 필수 디자이너 변수입니다.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// 사용 중인 모든 리소스를 정리합니다.
+        /// </summary>
+        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region 구성 요소 디자이너에서 생성한 코드
+
+        /// <summary> 
+        /// 디자이너 지원에 필요한 메서드입니다. 
+        /// 이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+        /// </summary>
+        private void InitializeComponent()
+        {
+			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServoTabMp2300Ctrl));
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
+			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+			this.treeViewServo = new System.Windows.Forms.TreeView();
+			this.label8 = new System.Windows.Forms.Label();
+			this.lblComStatus = new System.Windows.Forms.Label();
+			this.txtRepeatWaitTime = new Dms.Common.ValidationTextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.buttonAllEstop = new System.Windows.Forms.Button();
+			this.label7 = new System.Windows.Forms.Label();
+			this.lblMessage = new System.Windows.Forms.Label();
+			this.gbAxesControl = new System.Windows.Forms.GroupBox();
+			this.btnMapData = new System.Windows.Forms.Button();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.txtJogVel = new Dms.Common.ValidationTextBox();
+			this.btnJogMinus = new System.Windows.Forms.Button();
+			this.btnJogPlus = new System.Windows.Forms.Button();
+			this.label3 = new System.Windows.Forms.Label();
+			this.trackBarJogVel = new System.Windows.Forms.TrackBar();
+			this.gridViewAxes = new Dms.Control.DoubleBufferedGridView();
+			this.colNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colSetPos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colCurPos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colCurVel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colCurAcc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colNeg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colHome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colPos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colEvent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colSource = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.lblSelectedAxis = new System.Windows.Forms.Label();
+			this.gbServoControl = new System.Windows.Forms.GroupBox();
+			this.lblCommand = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.checkBoxServoHome = new System.Windows.Forms.CheckBox();
+			this.checkBoxServoOn = new System.Windows.Forms.CheckBox();
+			this.checkBoxServoEstop = new System.Windows.Forms.CheckBox();
+			this.btnEstop = new System.Windows.Forms.Button();
+			this.btnServoOn = new System.Windows.Forms.Button();
+			this.btnHome = new System.Windows.Forms.Button();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.txtVelRatio = new Dms.Common.ValidationTextBox();
+			this.trackBarVelRatio = new System.Windows.Forms.TrackBar();
+			this.btnMove = new System.Windows.Forms.Button();
+			this.btnRepeat = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.lblCurrentUnitName = new System.Windows.Forms.Label();
+			this.btnRead = new System.Windows.Forms.Button();
+			this.btnSave = new System.Windows.Forms.Button();
+			this.lblCurrentPos = new System.Windows.Forms.Label();
+			this.btnSend = new System.Windows.Forms.Button();
+			this.listTeachPoint = new System.Windows.Forms.ListView();
+			this.tmrUpdateState = new System.Windows.Forms.Timer(this.components);
+			this.groupBoxFindHome = new System.Windows.Forms.GroupBox();
+			this.btnFindHome = new System.Windows.Forms.Button();
+			this.txtFindHome = new System.Windows.Forms.TextBox();
+			this.label9 = new System.Windows.Forms.Label();
+			this.btnSaveFindHome = new System.Windows.Forms.Button();
+			this.splitContainer1.Panel1.SuspendLayout();
+			this.splitContainer1.Panel2.SuspendLayout();
+			this.splitContainer1.SuspendLayout();
+			this.gbAxesControl.SuspendLayout();
+			this.groupBox3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarJogVel)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridViewAxes)).BeginInit();
+			this.gbServoControl.SuspendLayout();
+			this.groupBox2.SuspendLayout();
+			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarVelRatio)).BeginInit();
+			this.groupBoxFindHome.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// splitContainer1
+			// 
+			this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+			this.splitContainer1.Name = "splitContainer1";
+			// 
+			// splitContainer1.Panel1
+			// 
+			this.splitContainer1.Panel1.Controls.Add(this.treeViewServo);
+			// 
+			// splitContainer1.Panel2
+			// 
+			this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Gainsboro;
+			this.splitContainer1.Panel2.Controls.Add(this.label8);
+			this.splitContainer1.Panel2.Controls.Add(this.lblComStatus);
+			this.splitContainer1.Panel2.Controls.Add(this.txtRepeatWaitTime);
+			this.splitContainer1.Panel2.Controls.Add(this.label5);
+			this.splitContainer1.Panel2.Controls.Add(this.label6);
+			this.splitContainer1.Panel2.Controls.Add(this.buttonAllEstop);
+			this.splitContainer1.Panel2.Controls.Add(this.label7);
+			this.splitContainer1.Panel2.Controls.Add(this.lblMessage);
+			this.splitContainer1.Panel2.Controls.Add(this.gbAxesControl);
+			this.splitContainer1.Panel2.Controls.Add(this.gbServoControl);
+			this.splitContainer1.Size = new System.Drawing.Size(901, 537);
+			this.splitContainer1.SplitterDistance = 137;
+			this.splitContainer1.TabIndex = 0;
+			// 
+			// treeViewServo
+			// 
+			this.treeViewServo.BackColor = System.Drawing.SystemColors.Window;
+			this.treeViewServo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.treeViewServo.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.treeViewServo.Location = new System.Drawing.Point(0, 0);
+			this.treeViewServo.Name = "treeViewServo";
+			this.treeViewServo.Size = new System.Drawing.Size(137, 537);
+			this.treeViewServo.TabIndex = 0;
+			this.treeViewServo.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeViewServo_NodeMouseClick);
+			// 
+			// label8
+			// 
+			this.label8.BackColor = System.Drawing.Color.Transparent;
+			this.label8.Location = new System.Drawing.Point(228, 465);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(133, 23);
+			this.label8.TabIndex = 28;
+			this.label8.Text = "Communication Status";
+			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// lblComStatus
+			// 
+			this.lblComStatus.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.lblComStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lblComStatus.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblComStatus.ForeColor = System.Drawing.Color.Blue;
+			this.lblComStatus.Location = new System.Drawing.Point(365, 463);
+			this.lblComStatus.Name = "lblComStatus";
+			this.lblComStatus.Size = new System.Drawing.Size(129, 26);
+			this.lblComStatus.TabIndex = 27;
+			this.lblComStatus.Text = "Not Ready";
+			this.lblComStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// txtRepeatWaitTime
+			// 
+			this.txtRepeatWaitTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtRepeatWaitTime.DataFormat = Dms.Common.OptionFormat.Float;
+			this.txtRepeatWaitTime.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtRepeatWaitTime.ForeColor = System.Drawing.Color.Blue;
+			this.txtRepeatWaitTime.ImeMode = System.Windows.Forms.ImeMode.Off;
+			this.txtRepeatWaitTime.KeyPadInfo = ((Dms.Common.KeyPadInfo)(resources.GetObject("txtRepeatWaitTime.KeyPadInfo")));
+			this.txtRepeatWaitTime.LimitHigh = "20";
+			this.txtRepeatWaitTime.LimitLow = "0.5";
+			this.txtRepeatWaitTime.Location = new System.Drawing.Point(675, 289);
+			this.txtRepeatWaitTime.Name = "txtRepeatWaitTime";
+			this.txtRepeatWaitTime.ReferenceTag = null;
+			this.txtRepeatWaitTime.Size = new System.Drawing.Size(36, 21);
+			this.txtRepeatWaitTime.TabIndex = 25;
+			this.txtRepeatWaitTime.Text = "1.0";
+			this.txtRepeatWaitTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtRepeatWaitTime.UsedInKeyPad = false;
+			this.txtRepeatWaitTime.TextChanged += new System.EventHandler(this.txtRepeatWaitTime_TextChanged);
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(639, 293);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(31, 15);
+			this.label5.TabIndex = 24;
+			this.label5.Text = "Wait";
+			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label6
+			// 
+			this.label6.BackColor = System.Drawing.Color.Transparent;
+			this.label6.Location = new System.Drawing.Point(8, 469);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(62, 23);
+			this.label6.TabIndex = 23;
+			this.label6.Text = "Message";
+			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// buttonAllEstop
+			// 
+			this.buttonAllEstop.BackColor = System.Drawing.Color.Crimson;
+			this.buttonAllEstop.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.buttonAllEstop.ForeColor = System.Drawing.Color.Yellow;
+			this.buttonAllEstop.Location = new System.Drawing.Point(508, 463);
+			this.buttonAllEstop.Name = "buttonAllEstop";
+			this.buttonAllEstop.Size = new System.Drawing.Size(235, 66);
+			this.buttonAllEstop.TabIndex = 21;
+			this.buttonAllEstop.Text = "E-STOP  ALL";
+			this.buttonAllEstop.UseVisualStyleBackColor = false;
+			this.buttonAllEstop.Click += new System.EventHandler(this.buttonAllEstop_Click);
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(717, 293);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(28, 15);
+			this.label7.TabIndex = 26;
+			this.label7.Text = "Sec";
+			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// lblMessage
+			// 
+			this.lblMessage.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lblMessage.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblMessage.ForeColor = System.Drawing.Color.Blue;
+			this.lblMessage.Location = new System.Drawing.Point(11, 497);
+			this.lblMessage.Name = "lblMessage";
+			this.lblMessage.Size = new System.Drawing.Size(483, 32);
+			this.lblMessage.TabIndex = 22;
+			this.lblMessage.Text = " Message from servo";
+			this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// gbAxesControl
+			// 
+			this.gbAxesControl.Controls.Add(this.btnMapData);
+			this.gbAxesControl.Controls.Add(this.groupBox3);
+			this.gbAxesControl.Controls.Add(this.gridViewAxes);
+			this.gbAxesControl.Controls.Add(this.lblSelectedAxis);
+			this.gbAxesControl.Location = new System.Drawing.Point(4, 302);
+			this.gbAxesControl.Margin = new System.Windows.Forms.Padding(0);
+			this.gbAxesControl.Name = "gbAxesControl";
+			this.gbAxesControl.Size = new System.Drawing.Size(752, 154);
+			this.gbAxesControl.TabIndex = 2;
+			this.gbAxesControl.TabStop = false;
+			this.gbAxesControl.Text = "Axes Control";
+			// 
+			// btnMapData
+			// 
+			this.btnMapData.BackColor = System.Drawing.Color.LemonChiffon;
+			this.btnMapData.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnMapData.Location = new System.Drawing.Point(504, 18);
+			this.btnMapData.Name = "btnMapData";
+			this.btnMapData.Size = new System.Drawing.Size(76, 30);
+			this.btnMapData.TabIndex = 19;
+			this.btnMapData.Text = "MAP Data";
+			this.btnMapData.UseVisualStyleBackColor = false;
+			this.btnMapData.Click += new System.EventHandler(this.btnMapData_Click);
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.txtJogVel);
+			this.groupBox3.Controls.Add(this.btnJogMinus);
+			this.groupBox3.Controls.Add(this.btnJogPlus);
+			this.groupBox3.Controls.Add(this.label3);
+			this.groupBox3.Controls.Add(this.trackBarJogVel);
+			this.groupBox3.Location = new System.Drawing.Point(597, 11);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(149, 135);
+			this.groupBox3.TabIndex = 20;
+			this.groupBox3.TabStop = false;
+			// 
+			// txtJogVel
+			// 
+			this.txtJogVel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+			this.txtJogVel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtJogVel.DataFormat = Dms.Common.OptionFormat.Float;
+			this.txtJogVel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtJogVel.ForeColor = System.Drawing.Color.Blue;
+			this.txtJogVel.ImeMode = System.Windows.Forms.ImeMode.Off;
+			this.txtJogVel.KeyPadInfo = ((Dms.Common.KeyPadInfo)(resources.GetObject("txtJogVel.KeyPadInfo")));
+			this.txtJogVel.LimitHigh = "100.0";
+			this.txtJogVel.LimitLow = "0.1";
+			this.txtJogVel.Location = new System.Drawing.Point(6, 12);
+			this.txtJogVel.Name = "txtJogVel";
+			this.txtJogVel.ReferenceTag = null;
+			this.txtJogVel.Size = new System.Drawing.Size(36, 21);
+			this.txtJogVel.TabIndex = 15;
+			this.txtJogVel.Text = "1.0";
+			this.txtJogVel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtJogVel.UsedInKeyPad = false;
+			this.txtJogVel.TextChanged += new System.EventHandler(this.txtJogVel_TextChanged);
+			// 
+			// btnJogMinus
+			// 
+			this.btnJogMinus.Anchor = System.Windows.Forms.AnchorStyles.Right;
+			this.btnJogMinus.BackColor = System.Drawing.Color.LemonChiffon;
+			this.btnJogMinus.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnJogMinus.Location = new System.Drawing.Point(45, 86);
+			this.btnJogMinus.Name = "btnJogMinus";
+			this.btnJogMinus.Size = new System.Drawing.Size(95, 44);
+			this.btnJogMinus.TabIndex = 17;
+			this.btnJogMinus.Text = "JOG (-)";
+			this.btnJogMinus.UseVisualStyleBackColor = false;
+			this.btnJogMinus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnJogMinus_MouseDown);
+			this.btnJogMinus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnJogMinus_MouseUp);
+			// 
+			// btnJogPlus
+			// 
+			this.btnJogPlus.Anchor = System.Windows.Forms.AnchorStyles.Right;
+			this.btnJogPlus.BackColor = System.Drawing.Color.LightCyan;
+			this.btnJogPlus.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnJogPlus.Location = new System.Drawing.Point(45, 36);
+			this.btnJogPlus.Name = "btnJogPlus";
+			this.btnJogPlus.Size = new System.Drawing.Size(95, 44);
+			this.btnJogPlus.TabIndex = 16;
+			this.btnJogPlus.Text = "JOG (+)";
+			this.btnJogPlus.UseVisualStyleBackColor = false;
+			this.btnJogPlus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnJogPlus_MouseDown);
+			this.btnJogPlus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnJogPlus_MouseUp);
+			// 
+			// label3
+			// 
+			this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+			this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.label3.Location = new System.Drawing.Point(45, 12);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(95, 21);
+			this.label3.TabIndex = 18;
+			this.label3.Text = "Vel (mm/s)";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// trackBarJogVel
+			// 
+			this.trackBarJogVel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+			this.trackBarJogVel.AutoSize = false;
+			this.trackBarJogVel.LargeChange = 1;
+			this.trackBarJogVel.Location = new System.Drawing.Point(12, 37);
+			this.trackBarJogVel.Margin = new System.Windows.Forms.Padding(0);
+			this.trackBarJogVel.Maximum = 100;
+			this.trackBarJogVel.Minimum = 1;
+			this.trackBarJogVel.Name = "trackBarJogVel";
+			this.trackBarJogVel.Orientation = System.Windows.Forms.Orientation.Vertical;
+			this.trackBarJogVel.Size = new System.Drawing.Size(24, 92);
+			this.trackBarJogVel.TabIndex = 14;
+			this.trackBarJogVel.TickStyle = System.Windows.Forms.TickStyle.None;
+			this.trackBarJogVel.Value = 1;
+			this.trackBarJogVel.Scroll += new System.EventHandler(this.trackBarJogVel_Scroll);
+			// 
+			// gridViewAxes
+			// 
+			this.gridViewAxes.AllowUserToAddRows = false;
+			this.gridViewAxes.AllowUserToDeleteRows = false;
+			this.gridViewAxes.AllowUserToResizeRows = false;
+			this.gridViewAxes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.gridViewAxes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+			this.gridViewAxes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+			dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle66.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle66.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle66.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gridViewAxes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle66;
+			this.gridViewAxes.ColumnHeadersHeight = 35;
+			this.gridViewAxes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+			this.gridViewAxes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colNo,
+            this.colName,
+            this.colSetPos,
+            this.colCurPos,
+            this.colCurVel,
+            this.colCurAcc,
+            this.colNeg,
+            this.colHome,
+            this.colPos,
+            this.colEvent,
+            this.colSource});
+			dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle78.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle78.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle78.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle78.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle78.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle78.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gridViewAxes.DefaultCellStyle = dataGridViewCellStyle78;
+			this.gridViewAxes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
+			this.gridViewAxes.Location = new System.Drawing.Point(7, 54);
+			this.gridViewAxes.Name = "gridViewAxes";
+			this.gridViewAxes.RowHeadersVisible = false;
+			this.gridViewAxes.RowTemplate.Height = 23;
+			this.gridViewAxes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+			this.gridViewAxes.Size = new System.Drawing.Size(579, 92);
+			this.gridViewAxes.TabIndex = 14;
+			this.gridViewAxes.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.gridViewAxes_CellBeginEdit);
+			this.gridViewAxes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAxes_CellDoubleClick);
+			this.gridViewAxes.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAxes_CellEndEdit);
+			this.gridViewAxes.SelectionChanged += new System.EventHandler(this.gridViewAxes_SelectionChanged);
+			// 
+			// colNo
+			// 
+			dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colNo.DefaultCellStyle = dataGridViewCellStyle67;
+			this.colNo.FillWeight = 42.09531F;
+			this.colNo.HeaderText = "No";
+			this.colNo.Name = "colNo";
+			this.colNo.ReadOnly = true;
+			this.colNo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colName
+			// 
+			dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colName.DefaultCellStyle = dataGridViewCellStyle68;
+			this.colName.FillWeight = 129.3955F;
+			this.colName.HeaderText = "Name";
+			this.colName.Name = "colName";
+			this.colName.ReadOnly = true;
+			this.colName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colSetPos
+			// 
+			dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colSetPos.DefaultCellStyle = dataGridViewCellStyle69;
+			this.colSetPos.FillWeight = 129.3955F;
+			this.colSetPos.HeaderText = "Set Pos";
+			this.colSetPos.Name = "colSetPos";
+			this.colSetPos.ReadOnly = true;
+			this.colSetPos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colCurPos
+			// 
+			dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colCurPos.DefaultCellStyle = dataGridViewCellStyle70;
+			this.colCurPos.FillWeight = 129.3955F;
+			this.colCurPos.HeaderText = "Cur Pos";
+			this.colCurPos.Name = "colCurPos";
+			this.colCurPos.ReadOnly = true;
+			this.colCurPos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colCurVel
+			// 
+			dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colCurVel.DefaultCellStyle = dataGridViewCellStyle71;
+			this.colCurVel.FillWeight = 76.7246F;
+			this.colCurVel.HeaderText = "Cur Vel";
+			this.colCurVel.Name = "colCurVel";
+			this.colCurVel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colCurAcc
+			// 
+			dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colCurAcc.DefaultCellStyle = dataGridViewCellStyle72;
+			this.colCurAcc.FillWeight = 77.00943F;
+			this.colCurAcc.HeaderText = "Cur Acc";
+			this.colCurAcc.Name = "colCurAcc";
+			this.colCurAcc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colNeg
+			// 
+			dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colNeg.DefaultCellStyle = dataGridViewCellStyle73;
+			this.colNeg.FillWeight = 50.56443F;
+			this.colNeg.HeaderText = "-";
+			this.colNeg.Name = "colNeg";
+			this.colNeg.ReadOnly = true;
+			this.colNeg.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colHome
+			// 
+			dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colHome.DefaultCellStyle = dataGridViewCellStyle74;
+			this.colHome.FillWeight = 50.4857F;
+			this.colHome.HeaderText = "H";
+			this.colHome.Name = "colHome";
+			this.colHome.ReadOnly = true;
+			this.colHome.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colPos
+			// 
+			dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colPos.DefaultCellStyle = dataGridViewCellStyle75;
+			this.colPos.FillWeight = 50.71113F;
+			this.colPos.HeaderText = "+";
+			this.colPos.Name = "colPos";
+			this.colPos.ReadOnly = true;
+			this.colPos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colEvent
+			// 
+			dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colEvent.DefaultCellStyle = dataGridViewCellStyle76;
+			this.colEvent.FillWeight = 129.3955F;
+			this.colEvent.HeaderText = "Event";
+			this.colEvent.Name = "colEvent";
+			this.colEvent.ReadOnly = true;
+			this.colEvent.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// colSource
+			// 
+			dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.colSource.DefaultCellStyle = dataGridViewCellStyle77;
+			this.colSource.FillWeight = 129.3955F;
+			this.colSource.HeaderText = "Source";
+			this.colSource.Name = "colSource";
+			this.colSource.ReadOnly = true;
+			this.colSource.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+			// 
+			// lblSelectedAxis
+			// 
+			this.lblSelectedAxis.Anchor = System.Windows.Forms.AnchorStyles.Right;
+			this.lblSelectedAxis.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.lblSelectedAxis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lblSelectedAxis.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblSelectedAxis.Location = new System.Drawing.Point(7, 18);
+			this.lblSelectedAxis.Name = "lblSelectedAxis";
+			this.lblSelectedAxis.Size = new System.Drawing.Size(177, 31);
+			this.lblSelectedAxis.TabIndex = 19;
+			this.lblSelectedAxis.Text = "Current Axis";
+			this.lblSelectedAxis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// gbServoControl
+			// 
+			this.gbServoControl.Controls.Add(this.groupBoxFindHome);
+			this.gbServoControl.Controls.Add(this.lblCommand);
+			this.gbServoControl.Controls.Add(this.label4);
+			this.gbServoControl.Controls.Add(this.label2);
+			this.gbServoControl.Controls.Add(this.groupBox2);
+			this.gbServoControl.Controls.Add(this.groupBox1);
+			this.gbServoControl.Controls.Add(this.lblCurrentUnitName);
+			this.gbServoControl.Controls.Add(this.btnRead);
+			this.gbServoControl.Controls.Add(this.btnSave);
+			this.gbServoControl.Controls.Add(this.lblCurrentPos);
+			this.gbServoControl.Controls.Add(this.btnSend);
+			this.gbServoControl.Controls.Add(this.listTeachPoint);
+			this.gbServoControl.Location = new System.Drawing.Point(4, 4);
+			this.gbServoControl.Margin = new System.Windows.Forms.Padding(0);
+			this.gbServoControl.Name = "gbServoControl";
+			this.gbServoControl.Size = new System.Drawing.Size(752, 289);
+			this.gbServoControl.TabIndex = 1;
+			this.gbServoControl.TabStop = false;
+			this.gbServoControl.Text = "ServoUnit Control";
+			// 
+			// lblCommand
+			// 
+			this.lblCommand.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.lblCommand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lblCommand.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCommand.ForeColor = System.Drawing.Color.Blue;
+			this.lblCommand.Location = new System.Drawing.Point(308, 20);
+			this.lblCommand.Name = "lblCommand";
+			this.lblCommand.Size = new System.Drawing.Size(278, 27);
+			this.lblCommand.TabIndex = 18;
+			this.lblCommand.Text = " Command";
+			this.lblCommand.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// label4
+			// 
+			this.label4.BackColor = System.Drawing.Color.Transparent;
+			this.label4.Location = new System.Drawing.Point(187, 22);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(115, 23);
+			this.label4.TabIndex = 17;
+			this.label4.Text = "Manual Command";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// label2
+			// 
+			this.label2.BackColor = System.Drawing.Color.Transparent;
+			this.label2.Location = new System.Drawing.Point(187, 52);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(115, 23);
+			this.label2.TabIndex = 16;
+			this.label2.Text = "Current Position";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// groupBox2
+			// 
+			this.groupBox2.Controls.Add(this.checkBoxServoHome);
+			this.groupBox2.Controls.Add(this.checkBoxServoOn);
+			this.groupBox2.Controls.Add(this.checkBoxServoEstop);
+			this.groupBox2.Controls.Add(this.btnEstop);
+			this.groupBox2.Controls.Add(this.btnServoOn);
+			this.groupBox2.Controls.Add(this.btnHome);
+			this.groupBox2.Location = new System.Drawing.Point(597, 11);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(149, 141);
+			this.groupBox2.TabIndex = 15;
+			this.groupBox2.TabStop = false;
+			// 
+			// checkBoxServoHome
+			// 
+			this.checkBoxServoHome.AutoCheck = false;
+			this.checkBoxServoHome.AutoSize = true;
+			this.checkBoxServoHome.Location = new System.Drawing.Point(9, 108);
+			this.checkBoxServoHome.Name = "checkBoxServoHome";
+			this.checkBoxServoHome.Size = new System.Drawing.Size(15, 14);
+			this.checkBoxServoHome.TabIndex = 13;
+			this.checkBoxServoHome.UseVisualStyleBackColor = true;
+			// 
+			// checkBoxServoOn
+			// 
+			this.checkBoxServoOn.AutoCheck = false;
+			this.checkBoxServoOn.AutoSize = true;
+			this.checkBoxServoOn.Location = new System.Drawing.Point(9, 66);
+			this.checkBoxServoOn.Name = "checkBoxServoOn";
+			this.checkBoxServoOn.Size = new System.Drawing.Size(15, 14);
+			this.checkBoxServoOn.TabIndex = 12;
+			this.checkBoxServoOn.UseVisualStyleBackColor = true;
+			// 
+			// checkBoxServoEstop
+			// 
+			this.checkBoxServoEstop.AutoCheck = false;
+			this.checkBoxServoEstop.AutoSize = true;
+			this.checkBoxServoEstop.Location = new System.Drawing.Point(9, 24);
+			this.checkBoxServoEstop.Name = "checkBoxServoEstop";
+			this.checkBoxServoEstop.Size = new System.Drawing.Size(15, 14);
+			this.checkBoxServoEstop.TabIndex = 11;
+			this.checkBoxServoEstop.UseVisualStyleBackColor = true;
+			// 
+			// btnEstop
+			// 
+			this.btnEstop.BackColor = System.Drawing.Color.Pink;
+			this.btnEstop.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEstop.Location = new System.Drawing.Point(25, 12);
+			this.btnEstop.Name = "btnEstop";
+			this.btnEstop.Size = new System.Drawing.Size(116, 38);
+			this.btnEstop.TabIndex = 10;
+			this.btnEstop.Text = "E-STOP";
+			this.btnEstop.UseVisualStyleBackColor = false;
+			this.btnEstop.Click += new System.EventHandler(this.btnEstop_Click);
+			// 
+			// btnServoOn
+			// 
+			this.btnServoOn.BackColor = System.Drawing.Color.LightCyan;
+			this.btnServoOn.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnServoOn.Location = new System.Drawing.Point(25, 54);
+			this.btnServoOn.Name = "btnServoOn";
+			this.btnServoOn.Size = new System.Drawing.Size(116, 38);
+			this.btnServoOn.TabIndex = 8;
+			this.btnServoOn.Text = "SERVO ON";
+			this.btnServoOn.UseVisualStyleBackColor = false;
+			this.btnServoOn.Click += new System.EventHandler(this.btnServoOn_Click);
+			// 
+			// btnHome
+			// 
+			this.btnHome.BackColor = System.Drawing.Color.LemonChiffon;
+			this.btnHome.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnHome.Location = new System.Drawing.Point(25, 96);
+			this.btnHome.Name = "btnHome";
+			this.btnHome.Size = new System.Drawing.Size(116, 38);
+			this.btnHome.TabIndex = 9;
+			this.btnHome.Text = "HOME";
+			this.btnHome.UseVisualStyleBackColor = false;
+			this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.txtVelRatio);
+			this.groupBox1.Controls.Add(this.trackBarVelRatio);
+			this.groupBox1.Controls.Add(this.btnMove);
+			this.groupBox1.Controls.Add(this.btnRepeat);
+			this.groupBox1.Controls.Add(this.label1);
+			this.groupBox1.Location = new System.Drawing.Point(597, 149);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(149, 135);
+			this.groupBox1.TabIndex = 14;
+			this.groupBox1.TabStop = false;
+			// 
+			// txtVelRatio
+			// 
+			this.txtVelRatio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtVelRatio.DataFormat = Dms.Common.OptionFormat.Digit;
+			this.txtVelRatio.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtVelRatio.ForeColor = System.Drawing.Color.Blue;
+			this.txtVelRatio.ImeMode = System.Windows.Forms.ImeMode.Off;
+			this.txtVelRatio.KeyPadInfo = ((Dms.Common.KeyPadInfo)(resources.GetObject("txtVelRatio.KeyPadInfo")));
+			this.txtVelRatio.LimitHigh = "100";
+			this.txtVelRatio.LimitLow = "10";
+			this.txtVelRatio.Location = new System.Drawing.Point(7, 12);
+			this.txtVelRatio.Name = "txtVelRatio";
+			this.txtVelRatio.ReferenceTag = null;
+			this.txtVelRatio.Size = new System.Drawing.Size(36, 21);
+			this.txtVelRatio.TabIndex = 3;
+			this.txtVelRatio.Text = "100";
+			this.txtVelRatio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtVelRatio.UsedInKeyPad = false;
+			this.txtVelRatio.TextChanged += new System.EventHandler(this.txtVelRatio_TextChanged);
+			// 
+			// trackBarVelRatio
+			// 
+			this.trackBarVelRatio.AutoSize = false;
+			this.trackBarVelRatio.LargeChange = 1;
+			this.trackBarVelRatio.Location = new System.Drawing.Point(14, 36);
+			this.trackBarVelRatio.Margin = new System.Windows.Forms.Padding(0);
+			this.trackBarVelRatio.Maximum = 100;
+			this.trackBarVelRatio.Minimum = 10;
+			this.trackBarVelRatio.Name = "trackBarVelRatio";
+			this.trackBarVelRatio.Orientation = System.Windows.Forms.Orientation.Vertical;
+			this.trackBarVelRatio.Size = new System.Drawing.Size(24, 92);
+			this.trackBarVelRatio.TabIndex = 2;
+			this.trackBarVelRatio.TickStyle = System.Windows.Forms.TickStyle.None;
+			this.trackBarVelRatio.Value = 100;
+			this.trackBarVelRatio.Scroll += new System.EventHandler(this.trackBarVelRatio_Scroll);
+			// 
+			// btnMove
+			// 
+			this.btnMove.BackColor = System.Drawing.Color.LightCyan;
+			this.btnMove.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnMove.Location = new System.Drawing.Point(47, 37);
+			this.btnMove.Name = "btnMove";
+			this.btnMove.Size = new System.Drawing.Size(95, 44);
+			this.btnMove.TabIndex = 4;
+			this.btnMove.Text = "MOVE";
+			this.btnMove.UseVisualStyleBackColor = false;
+			this.btnMove.Click += new System.EventHandler(this.btnMove_Click);
+			// 
+			// btnRepeat
+			// 
+			this.btnRepeat.BackColor = System.Drawing.Color.LemonChiffon;
+			this.btnRepeat.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnRepeat.Location = new System.Drawing.Point(47, 85);
+			this.btnRepeat.Name = "btnRepeat";
+			this.btnRepeat.Size = new System.Drawing.Size(95, 44);
+			this.btnRepeat.TabIndex = 5;
+			this.btnRepeat.Text = "REPEAT";
+			this.btnRepeat.UseVisualStyleBackColor = false;
+			this.btnRepeat.Click += new System.EventHandler(this.btnRepeat_Click);
+			// 
+			// label1
+			// 
+			this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.label1.Location = new System.Drawing.Point(47, 12);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(95, 21);
+			this.label1.TabIndex = 6;
+			this.label1.Text = "Vel Ratio(%)";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// lblCurrentUnitName
+			// 
+			this.lblCurrentUnitName.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.lblCurrentUnitName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lblCurrentUnitName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCurrentUnitName.ForeColor = System.Drawing.Color.Blue;
+			this.lblCurrentUnitName.Location = new System.Drawing.Point(6, 20);
+			this.lblCurrentUnitName.Name = "lblCurrentUnitName";
+			this.lblCurrentUnitName.Size = new System.Drawing.Size(177, 56);
+			this.lblCurrentUnitName.TabIndex = 0;
+			this.lblCurrentUnitName.Text = "ServoUnit Name";
+			this.lblCurrentUnitName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// btnRead
+			// 
+			this.btnRead.BackColor = System.Drawing.Color.LemonChiffon;
+			this.btnRead.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnRead.Location = new System.Drawing.Point(527, 88);
+			this.btnRead.Name = "btnRead";
+			this.btnRead.Size = new System.Drawing.Size(53, 30);
+			this.btnRead.TabIndex = 12;
+			this.btnRead.Text = "READ";
+			this.btnRead.UseVisualStyleBackColor = false;
+			this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
+			// 
+			// btnSave
+			// 
+			this.btnSave.BackColor = System.Drawing.Color.LightCyan;
+			this.btnSave.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSave.Location = new System.Drawing.Point(470, 88);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Size = new System.Drawing.Size(53, 30);
+			this.btnSave.TabIndex = 11;
+			this.btnSave.Text = "SAVE";
+			this.btnSave.UseVisualStyleBackColor = false;
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+			// 
+			// lblCurrentPos
+			// 
+			this.lblCurrentPos.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.lblCurrentPos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lblCurrentPos.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCurrentPos.ForeColor = System.Drawing.Color.Blue;
+			this.lblCurrentPos.Location = new System.Drawing.Point(308, 50);
+			this.lblCurrentPos.Name = "lblCurrentPos";
+			this.lblCurrentPos.Size = new System.Drawing.Size(278, 26);
+			this.lblCurrentPos.TabIndex = 13;
+			this.lblCurrentPos.Text = " Current Position";
+			this.lblCurrentPos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// btnSend
+			// 
+			this.btnSend.BackColor = System.Drawing.Color.Pink;
+			this.btnSend.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSend.Location = new System.Drawing.Point(413, 88);
+			this.btnSend.Name = "btnSend";
+			this.btnSend.Size = new System.Drawing.Size(53, 30);
+			this.btnSend.TabIndex = 7;
+			this.btnSend.Text = "SET";
+			this.btnSend.UseVisualStyleBackColor = false;
+			this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+			// 
+			// listTeachPoint
+			// 
+			this.listTeachPoint.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.listTeachPoint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.listTeachPoint.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.listTeachPoint.ForeColor = System.Drawing.Color.Blue;
+			this.listTeachPoint.FullRowSelect = true;
+			this.listTeachPoint.GridLines = true;
+			this.listTeachPoint.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+			this.listTeachPoint.Location = new System.Drawing.Point(6, 84);
+			this.listTeachPoint.MultiSelect = false;
+			this.listTeachPoint.Name = "listTeachPoint";
+			this.listTeachPoint.Size = new System.Drawing.Size(580, 199);
+			this.listTeachPoint.TabIndex = 1;
+			this.listTeachPoint.UseCompatibleStateImageBehavior = false;
+			this.listTeachPoint.View = System.Windows.Forms.View.Details;
+			this.listTeachPoint.Click += new System.EventHandler(this.listTeachPoint_Click);
+			// 
+			// tmrUpdateState
+			// 
+			this.tmrUpdateState.Interval = 500;
+			this.tmrUpdateState.Tick += new System.EventHandler(this.tmrUpdateState_Tick);
+			// 
+			// groupBoxFindHome
+			// 
+			this.groupBoxFindHome.Controls.Add(this.btnSaveFindHome);
+			this.groupBoxFindHome.Controls.Add(this.label9);
+			this.groupBoxFindHome.Controls.Add(this.txtFindHome);
+			this.groupBoxFindHome.Controls.Add(this.btnFindHome);
+			this.groupBoxFindHome.Location = new System.Drawing.Point(7, 206);
+			this.groupBoxFindHome.Name = "groupBoxFindHome";
+			this.groupBoxFindHome.Size = new System.Drawing.Size(421, 77);
+			this.groupBoxFindHome.TabIndex = 19;
+			this.groupBoxFindHome.TabStop = false;
+			this.groupBoxFindHome.Text = "Calculate R/B Home Position Angle";
+			this.groupBoxFindHome.Visible = false;
+			// 
+			// btnFindHome
+			// 
+			this.btnFindHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.btnFindHome.BackColor = System.Drawing.Color.LightCyan;
+			this.btnFindHome.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFindHome.Location = new System.Drawing.Point(6, 27);
+			this.btnFindHome.Name = "btnFindHome";
+			this.btnFindHome.Size = new System.Drawing.Size(95, 44);
+			this.btnFindHome.TabIndex = 20;
+			this.btnFindHome.Text = "FIND HOME";
+			this.btnFindHome.UseVisualStyleBackColor = false;
+			this.btnFindHome.Click += new System.EventHandler(this.btnFindHome_Click);
+			// 
+			// txtFindHome
+			// 
+			this.txtFindHome.Location = new System.Drawing.Point(107, 49);
+			this.txtFindHome.Name = "txtFindHome";
+			this.txtFindHome.ReadOnly = true;
+			this.txtFindHome.Size = new System.Drawing.Size(100, 21);
+			this.txtFindHome.TabIndex = 21;
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(214, 49);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(99, 15);
+			this.label9.TabIndex = 22;
+			this.label9.Text = "Degree (Radian)";
+			// 
+			// btnSaveFindHome
+			// 
+			this.btnSaveFindHome.BackColor = System.Drawing.Color.Pink;
+			this.btnSaveFindHome.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSaveFindHome.Location = new System.Drawing.Point(319, 26);
+			this.btnSaveFindHome.Name = "btnSaveFindHome";
+			this.btnSaveFindHome.Size = new System.Drawing.Size(95, 44);
+			this.btnSaveFindHome.TabIndex = 23;
+			this.btnSaveFindHome.Text = "SAVE";
+			this.btnSaveFindHome.UseVisualStyleBackColor = false;
+			this.btnSaveFindHome.Click += new System.EventHandler(this.btnSaveFindHome_Click);
+			// 
+			// ServoTabMp2300Ctrl
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+			this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+			this.BackColor = System.Drawing.Color.Transparent;
+			this.Controls.Add(this.splitContainer1);
+			this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Name = "ServoTabMp2300Ctrl";
+			this.Size = new System.Drawing.Size(901, 537);
+			this.splitContainer1.Panel1.ResumeLayout(false);
+			this.splitContainer1.Panel2.ResumeLayout(false);
+			this.splitContainer1.Panel2.PerformLayout();
+			this.splitContainer1.ResumeLayout(false);
+			this.gbAxesControl.ResumeLayout(false);
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarJogVel)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gridViewAxes)).EndInit();
+			this.gbServoControl.ResumeLayout(false);
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarVelRatio)).EndInit();
+			this.groupBoxFindHome.ResumeLayout(false);
+			this.groupBoxFindHome.PerformLayout();
+			this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TreeView treeViewServo;
+        private System.Windows.Forms.GroupBox gbServoControl;
+        private System.Windows.Forms.Label lblCommand;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.CheckBox checkBoxServoHome;
+        private System.Windows.Forms.CheckBox checkBoxServoOn;
+        private System.Windows.Forms.CheckBox checkBoxServoEstop;
+        private System.Windows.Forms.Button btnEstop;
+        private System.Windows.Forms.Button btnServoOn;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private Dms.Common.ValidationTextBox txtVelRatio;
+        private System.Windows.Forms.TrackBar trackBarVelRatio;
+        private System.Windows.Forms.Button btnMove;
+        private System.Windows.Forms.Button btnRepeat;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCurrentUnitName;
+        private System.Windows.Forms.Button btnRead;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblCurrentPos;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.ListView listTeachPoint;
+        private System.Windows.Forms.GroupBox gbAxesControl;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private Dms.Common.ValidationTextBox txtJogVel;
+        private System.Windows.Forms.Button btnJogMinus;
+        private System.Windows.Forms.Button btnJogPlus;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TrackBar trackBarJogVel;
+        private DoubleBufferedGridView gridViewAxes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSetPos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCurPos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCurVel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCurAcc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNeg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEvent;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSource;
+        private System.Windows.Forms.Label lblSelectedAxis;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buttonAllEstop;
+        private System.Windows.Forms.Label lblMessage;
+        private Dms.Common.ValidationTextBox txtRepeatWaitTime;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Timer tmrUpdateState;
+        private System.Windows.Forms.Label lblComStatus;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnMapData;
+		private System.Windows.Forms.GroupBox groupBoxFindHome;
+		private System.Windows.Forms.Button btnFindHome;
+		private System.Windows.Forms.TextBox txtFindHome;
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Button btnSaveFindHome;
+    }
+}

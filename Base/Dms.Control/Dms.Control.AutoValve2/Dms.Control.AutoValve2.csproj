@@ -1,0 +1,141 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE75F77B-4596-48DA-A0BA-6AA36B673476}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control</RootNamespace>
+    <AssemblyName>Dms.Control.AutoValve2</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoValve2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoValve2.Designer.cs">
+      <DependentUpon>AutoValve2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgAutoValve2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgAutoValve2.Designer.cs">
+      <DependentUpon>DlgAutoValve2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutoValve2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AutoValve2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgAutoValve2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DlgAutoValve2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_off_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_on_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_push.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_push_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{BC761389-B4DE-4459-8530-BDE2973A7A83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VGate_Open.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HGate_Close.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HGate_Focus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HGate_Open.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VGate_Close.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VGate_Focus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_r_on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_r_off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_r_push.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_h_on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_h_push.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autovalve_v_push.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

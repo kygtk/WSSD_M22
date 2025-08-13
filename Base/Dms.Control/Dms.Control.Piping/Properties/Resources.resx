@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_180_ELBOW_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\180-ELBOW-B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_180_ELBOW_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cyan\180-ELBOW-C.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_180_ELBOW_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\180-ELBOW-G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_180_ELBOW_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\180-ELBOW_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_180_ELBOW_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\180-ELBOW-Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_270_ELBOW_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\270-ELBOW-B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_270_ELBOW_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\270-ELBOW-G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_270_ELBOW_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\270-ELBOW_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_270_ELBOW_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\270-ELBOW-Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_360_ELBOW_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\360-ELBOW-B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_360_ELBOW_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\360-ELBOW-G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_360_ELBOW_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\360-ELBOW_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_360_ELBOW_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\360-ELBOW-Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_90_ELBOW_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\90-ELBOW-B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_90_ELBOW_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cyan\90-ELBOW-C.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_90_ELBOW_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\90-ELBOW-G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_90_ELBOW_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\90-ELBOW_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_90_ELBOW_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\90-ELBOW-Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Horizon_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\Pipe_Horizon_B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Horizon_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cyan\Pipe_Horizon_C.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Horizon_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\Pipe_Horizon_G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Horizon_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\Pipe_Horizon_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Horizon_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\Pipe_Horizon_Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Left_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\Pipe-Left-B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Left_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\Pipe-Left-G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Left_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\Pipe-Left-Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Lower_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\Pipe-Lower-B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Lower_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\Pipe-Lower-G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Lower_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\Pipe-Lower_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Lower_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\Pipe-Lower-Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Right_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\Pipe-Right-B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Right_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\Pipe-Right-G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Right_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\Pipe_Right_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Right_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\Pipe-Right-Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Upper_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\Pipe-Upper-B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Upper_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\Pipe-Upper-G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Upper_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\Pipe-Upper_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Upper_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\Pipe-Upper-Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Vertical_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue\Pipe_Vertical_B.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Vertical_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cyan\Pipe_Vertical_C.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Vertical_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green\Pipe_Vertical_G.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Vertical_GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray\Pipe_Vertical_GR.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pipe_Vertical_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yellow\Pipe_Vertical_Y.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

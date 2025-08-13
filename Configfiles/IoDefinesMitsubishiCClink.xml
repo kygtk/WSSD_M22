@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IoDefines xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WireNumberMode>ByOct</WireNumberMode>
+  <SimulateController>false</SimulateController>
+  <Container>
+    <IoNode xsi:type="IoNodeMelsec">
+      <Id>0</Id>
+      <StructureType>NodeTerminal</StructureType>
+      <Terminals>
+        <IoTerminal xsi:type="CCXQD">
+          <Id>0</Id>
+          <IdByIoType>0</IdByIoType>
+          <IoType>Mix</IoType>
+          <ChannelCount>72</ChannelCount>
+          <Channels>
+            <IoItem xsi:type="IoItemDI">
+              <Id>0</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>0</Channel>
+              <WiringNo>1X000</WiringNo>
+              <Name>di_TEST_CV_FWD</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>1</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>1</Channel>
+              <WiringNo>1X001</WiringNo>
+              <Name>di_TEST_CV_REV</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>2</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>2</Channel>
+              <WiringNo>1X002</WiringNo>
+              <Name>di_TEST_CV_MOVE</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>3</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>3</Channel>
+              <WiringNo>1X003</WiringNo>
+              <Name>di_TEST_CV_VA</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>4</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>4</Channel>
+              <WiringNo>1X004</WiringNo>
+              <Name>di_TEST_CV_ALARM_OUT2</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>5</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>5</Channel>
+              <WiringNo>1X005</WiringNo>
+              <Name>di_TEST_CV_MPS</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>6</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>6</Channel>
+              <WiringNo>1X006</WiringNo>
+              <Name>di_TEST_CV_WNG</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>7</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>7</Channel>
+              <WiringNo>1X007</WiringNo>
+              <Name>di_TEST_CV_ALARM_OUT1</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>8</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>8</Channel>
+              <WiringNo>1X010</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>9</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>9</Channel>
+              <WiringNo>1X011</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>10</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>10</Channel>
+              <WiringNo>1X012</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>11</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>11</Channel>
+              <WiringNo>1X013</WiringNo>
+              <Name>di_TEST_CV_S_BSY</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>12</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>12</Channel>
+              <WiringNo>1X014</WiringNo>
+              <Name>di_TEST_CV_M_BSY</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>13</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>13</Channel>
+              <WiringNo>1X015</WiringNo>
+              <Name>di_TEST_CV_VW_END</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>14</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>14</Channel>
+              <WiringNo>1X016</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>15</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>15</Channel>
+              <WiringNo>1X017</WiringNo>
+              <Name>di_TEST_CV_CW_END</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>16</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>16</Channel>
+              <WiringNo>1X020</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>17</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>17</Channel>
+              <WiringNo>1X021</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>18</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>18</Channel>
+              <WiringNo>1X022</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>19</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>19</Channel>
+              <WiringNo>1X023</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>20</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>20</Channel>
+              <WiringNo>1X024</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>21</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>21</Channel>
+              <WiringNo>1X025</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>22</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>22</Channel>
+              <WiringNo>1X026</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>23</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>23</Channel>
+              <WiringNo>1X027</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>24</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>24</Channel>
+              <WiringNo>1X030</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>25</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>25</Channel>
+              <WiringNo>1X031</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>26</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>26</Channel>
+              <WiringNo>1X032</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>27</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>27</Channel>
+              <WiringNo>1X033</WiringNo>
+              <Name>di_TEST_CV_CRD</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>28</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>28</Channel>
+              <WiringNo>1X034</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>29</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>29</Channel>
+              <WiringNo>1X035</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>30</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>30</Channel>
+              <WiringNo>1X036</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>31</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>31</Channel>
+              <WiringNo>1X037</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem>
+              <Id>0</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>0</Channel>
+              <WiringNo>1Y000</WiringNo>
+              <Name>do_TEST_CV_FWD</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>1</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>1</Channel>
+              <WiringNo>1Y001</WiringNo>
+              <Name>do_TEST_CV_REV</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>2</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>2</Channel>
+              <WiringNo>1Y002</WiringNo>
+              <Name>do_TEST_CV_M0</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>3</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>3</Channel>
+              <WiringNo>1Y003</WiringNo>
+              <Name>do_TEST_CV_M1</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>4</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>4</Channel>
+              <WiringNo>1Y004</WiringNo>
+              <Name>do_TEST_CV_M2</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>5</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>5</Channel>
+              <WiringNo>1Y005</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>6</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>6</Channel>
+              <WiringNo>1Y006</WiringNo>
+              <Name>do_TEST_CV_STOP_MODE</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>7</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>7</Channel>
+              <WiringNo>1Y007</WiringNo>
+              <Name>do_TEST_CV_ALARM_RESET</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>8</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>8</Channel>
+              <WiringNo>1Y010</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>9</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>9</Channel>
+              <WiringNo>1Y011</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>10</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>10</Channel>
+              <WiringNo>1Y012</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>11</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>11</Channel>
+              <WiringNo>1Y013</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>12</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>12</Channel>
+              <WiringNo>1Y014</WiringNo>
+              <Name>do_TEST_CV_M_REQ</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>13</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>13</Channel>
+              <WiringNo>1Y015</WiringNo>
+              <Name>do_TEST_CV_VW_REQ</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>14</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>14</Channel>
+              <WiringNo>1Y016</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>15</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>15</Channel>
+              <WiringNo>1Y017</WiringNo>
+              <Name>do_TEST_CV_CW_REQ</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>16</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>16</Channel>
+              <WiringNo>1Y020</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>17</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>17</Channel>
+              <WiringNo>1Y021</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>18</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>18</Channel>
+              <WiringNo>1Y022</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>19</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>19</Channel>
+              <WiringNo>1Y023</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>20</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>20</Channel>
+              <WiringNo>1Y024</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>21</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>21</Channel>
+              <WiringNo>1Y025</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>22</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>22</Channel>
+              <WiringNo>1Y026</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>23</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>23</Channel>
+              <WiringNo>1Y027</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>24</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>24</Channel>
+              <WiringNo>1Y030</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>25</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>25</Channel>
+              <WiringNo>1Y031</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>26</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>26</Channel>
+              <WiringNo>1Y032</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>27</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>27</Channel>
+              <WiringNo>1Y033</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>28</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>28</Channel>
+              <WiringNo>1Y034</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>29</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>29</Channel>
+              <WiringNo>1Y035</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>30</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>30</Channel>
+              <WiringNo>1Y036</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>31</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>31</Channel>
+              <WiringNo>1Y037</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>0</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>0</Channel>
+              <WiringNo>1AI000</WiringNo>
+              <Name>ai_TEST_CV_MonitorValue</Name>
+              <Description />
+              <IoType>AI</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>1</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>1</Channel>
+              <WiringNo>1AI001</WiringNo>
+              <Name>ai_TEST_CV_CurrentRPM</Name>
+              <Description />
+              <IoType>AI</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>2</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>2</Channel>
+              <WiringNo>1AI002</WiringNo>
+              <Name>ai_TEST_CV_ResponseCode</Name>
+              <Description />
+              <IoType>AI</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>3</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>3</Channel>
+              <WiringNo>1AI003</WiringNo>
+              <Name>ai_TEST_CV_CallingData</Name>
+              <Description />
+              <IoType>AI</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>0</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>0</Channel>
+              <WiringNo>1AO000</WiringNo>
+              <Name>ao_TEST_CV_MonitorCode</Name>
+              <Description />
+              <IoType>AO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>1</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>1</Channel>
+              <WiringNo>1AO001</WiringNo>
+              <Name>ao_TEST_CV_SettingRPM</Name>
+              <Description />
+              <IoType>AO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>2</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>2</Channel>
+              <WiringNo>1AO002</WiringNo>
+              <Name>ao_TEST_CV_CommandCode</Name>
+              <Description />
+              <IoType>AO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>3</Id>
+              <Node>0</Node>
+              <Terminal>0</Terminal>
+              <Channel>3</Channel>
+              <WiringNo>1AO003</WiringNo>
+              <Name>ao_TEST_CV_RecordingData</Name>
+              <Description />
+              <IoType>AO</IoType>
+            </IoItem>
+          </Channels>
+          <Info>
+            <MasterNo>1</MasterNo>
+            <StationNo>1</StationNo>
+            <StationId>0</StationId>
+            <StationOccupies>1</StationOccupies>
+            <StationType>RemoteDevice</StationType>
+            <TerminalType>BLDC</TerminalType>
+            <AddressAllocType>Exclusive</AddressAllocType>
+            <Points>1</Points>
+            <AddressRx>0</AddressRx>
+            <AddressRy>0</AddressRy>
+            <AddressRWr>0</AddressRWr>
+            <AddressRWw>0</AddressRWw>
+            <IndexDiBuf>0</IndexDiBuf>
+            <IndexDoBuf>0</IndexDoBuf>
+            <IndexAiBuf>0</IndexAiBuf>
+            <IndexAoBuf>0</IndexAoBuf>
+            <Usage>0</Usage>
+            <RangeType>0</RangeType>
+            <MovingAvg>0</MovingAvg>
+            <HasTrouble>false</HasTrouble>
+            <InitComp>false</InitComp>
+          </Info>
+          <StationNo>0</StationNo>
+          <Name>TEST_CV</Name>
+        </IoTerminal>
+        <IoTerminal xsi:type="CCV1000">
+          <Id>1</Id>
+          <IdByIoType>0</IdByIoType>
+          <IoType>Mix</IoType>
+          <ChannelCount>72</ChannelCount>
+          <Channels>
+            <IoItem xsi:type="IoItemDI">
+              <Id>32</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>0</Channel>
+              <WiringNo>1X040</WiringNo>
+              <Name>di_Test_V1000_FWD</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>33</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>1</Channel>
+              <WiringNo>1X041</WiringNo>
+              <Name>di_Test_V1000_REV</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>34</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>2</Channel>
+              <WiringNo>1X042</WiringNo>
+              <Name>di_Test_V1000_H2_01</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>35</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>3</Channel>
+              <WiringNo>1X043</WiringNo>
+              <Name>di_Test_V1000_VA</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>36</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>4</Channel>
+              <WiringNo>1X044</WiringNo>
+              <Name>di_Test_V1000_STALL_PREVENTION</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>37</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>5</Channel>
+              <WiringNo>1X045</WiringNo>
+              <Name>di_Test_V1000_UV</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>38</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>6</Channel>
+              <WiringNo>1X046</WiringNo>
+              <Name>di_Test_V1000_H2_02</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>39</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>7</Channel>
+              <WiringNo>1X047</WiringNo>
+              <Name>di_Test_V1000_H2_03</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>40</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>8</Channel>
+              <WiringNo>1X050</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>41</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>9</Channel>
+              <WiringNo>1X051</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>42</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>10</Channel>
+              <WiringNo>1X052</WiringNo>
+              <Name>di_Test_V1000_CCLink_ERR</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>43</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>11</Channel>
+              <WiringNo>1X053</WiringNo>
+              <Name>di_Test_V1000_MONIT_ING</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>44</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>12</Channel>
+              <WiringNo>1X054</WiringNo>
+              <Name>di_Test_V1000_MONIT_END</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>45</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>13</Channel>
+              <WiringNo>1X055</WiringNo>
+              <Name>di_Test_V1000_VW_END_1</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>46</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>14</Channel>
+              <WiringNo>1X056</WiringNo>
+              <Name>di_Test_V1000_VW_END_2</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>47</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>15</Channel>
+              <WiringNo>1X057</WiringNo>
+              <Name>di_Test_V1000_CW_END</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>48</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>16</Channel>
+              <WiringNo>1X060</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>49</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>17</Channel>
+              <WiringNo>1X061</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>50</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>18</Channel>
+              <WiringNo>1X062</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>51</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>19</Channel>
+              <WiringNo>1X063</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>52</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>20</Channel>
+              <WiringNo>1X064</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>53</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>21</Channel>
+              <WiringNo>1X065</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>54</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>22</Channel>
+              <WiringNo>1X066</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>55</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>23</Channel>
+              <WiringNo>1X067</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>56</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>24</Channel>
+              <WiringNo>1X070</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>57</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>25</Channel>
+              <WiringNo>1X071</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>58</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>26</Channel>
+              <WiringNo>1X072</WiringNo>
+              <Name>di_Test_V1000_ERR</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>59</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>27</Channel>
+              <WiringNo>1X073</WiringNo>
+              <Name>di_Test_V1000_RDY</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>60</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>28</Channel>
+              <WiringNo>1X074</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>61</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>29</Channel>
+              <WiringNo>1X075</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>62</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>30</Channel>
+              <WiringNo>1X076</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem xsi:type="IoItemDI">
+              <Id>63</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>31</Channel>
+              <WiringNo>1X077</WiringNo>
+              <Name>di_Spare</Name>
+              <Description />
+              <IoType>DI</IoType>
+              <ActiveType>A</ActiveType>
+            </IoItem>
+            <IoItem>
+              <Id>32</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>0</Channel>
+              <WiringNo>1Y040</WiringNo>
+              <Name>do_Test_V1000_FWD</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>33</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>1</Channel>
+              <WiringNo>1Y041</WiringNo>
+              <Name>do_Test_V1000_REV</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>34</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>2</Channel>
+              <WiringNo>1Y042</WiringNo>
+              <Name>do_Test_V1000_TERM_S3</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>35</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>3</Channel>
+              <WiringNo>1Y043</WiringNo>
+              <Name>do_Test_V1000_TERM_S4</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>36</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>4</Channel>
+              <WiringNo>1Y044</WiringNo>
+              <Name>do_Test_V1000_TERM_S5</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>37</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>5</Channel>
+              <WiringNo>1Y045</WiringNo>
+              <Name>do_Test_V1000_TERM_S6</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>38</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>6</Channel>
+              <WiringNo>1Y046</WiringNo>
+              <Name>do_Test_V1000_TERM_S7</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>39</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>7</Channel>
+              <WiringNo>1Y047</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>40</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>8</Channel>
+              <WiringNo>1Y050</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>41</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>9</Channel>
+              <WiringNo>1Y051</WiringNo>
+              <Name>do_Test_V1000_OUT_CUTOFF</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>42</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>10</Channel>
+              <WiringNo>1Y052</WiringNo>
+              <Name>do_Test_V1000_EXT_ERR</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>43</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>11</Channel>
+              <WiringNo>1Y053</WiringNo>
+              <Name>do_Test_V1000_RWR1_SWITCHING</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>44</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>12</Channel>
+              <WiringNo>1Y054</WiringNo>
+              <Name>do_Test_V1000_MONIT_REQ</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>45</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>13</Channel>
+              <WiringNo>1Y055</WiringNo>
+              <Name>do_Test_V1000_VW_REQ_1</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>46</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>14</Channel>
+              <WiringNo>1Y056</WiringNo>
+              <Name>do_Test_V1000_VW_REQ_2</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>47</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>15</Channel>
+              <WiringNo>1Y057</WiringNo>
+              <Name>do_Test_V1000_CW_REQ</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>48</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>16</Channel>
+              <WiringNo>1Y060</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>49</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>17</Channel>
+              <WiringNo>1Y061</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>50</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>18</Channel>
+              <WiringNo>1Y062</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>51</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>19</Channel>
+              <WiringNo>1Y063</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>52</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>20</Channel>
+              <WiringNo>1Y064</WiringNo>
+              <Name>do_Test_V1000_TERM_S1</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>53</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>21</Channel>
+              <WiringNo>1Y065</WiringNo>
+              <Name>do_Test_V1000_TERM_S2</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>54</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>22</Channel>
+              <WiringNo>1Y066</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>55</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>23</Channel>
+              <WiringNo>1Y067</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>56</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>24</Channel>
+              <WiringNo>1Y070</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>57</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>25</Channel>
+              <WiringNo>1Y071</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>58</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>26</Channel>
+              <WiringNo>1Y072</WiringNo>
+              <Name>do_Test_V1000_ERR_RESET</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>59</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>27</Channel>
+              <WiringNo>1Y073</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>60</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>28</Channel>
+              <WiringNo>1Y074</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>61</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>29</Channel>
+              <WiringNo>1Y075</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>62</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>30</Channel>
+              <WiringNo>1Y076</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>63</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>31</Channel>
+              <WiringNo>1Y077</WiringNo>
+              <Name>do_Spare</Name>
+              <Description />
+              <IoType>DO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>4</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>0</Channel>
+              <WiringNo>1AI004</WiringNo>
+              <Name>ai_Test_V1000_MonitorValue</Name>
+              <Description />
+              <IoType>AI</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>5</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>1</Channel>
+              <WiringNo>1AI005</WiringNo>
+              <Name>ai_Test_V1000_CurrentFREQ</Name>
+              <Description />
+              <IoType>AI</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>6</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>2</Channel>
+              <WiringNo>1AI006</WiringNo>
+              <Name>ai_Test_V1000_ResponseCode</Name>
+              <Description />
+              <IoType>AI</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>7</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>3</Channel>
+              <WiringNo>1AI007</WiringNo>
+              <Name>ai_Test_V1000_CallingData</Name>
+              <Description />
+              <IoType>AI</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>4</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>0</Channel>
+              <WiringNo>1AO004</WiringNo>
+              <Name>ao_Test_V1000_MonitorCode</Name>
+              <Description />
+              <IoType>AO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>5</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>1</Channel>
+              <WiringNo>1AO005</WiringNo>
+              <Name>ao_Test_V1000_SettingFREQ</Name>
+              <Description />
+              <IoType>AO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>6</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>2</Channel>
+              <WiringNo>1AO006</WiringNo>
+              <Name>ao_Test_V1000_CommandCode</Name>
+              <Description />
+              <IoType>AO</IoType>
+            </IoItem>
+            <IoItem>
+              <Id>7</Id>
+              <Node>0</Node>
+              <Terminal>1</Terminal>
+              <Channel>3</Channel>
+              <WiringNo>1AO007</WiringNo>
+              <Name>ao_Test_V1000_RecordingData</Name>
+              <Description />
+              <IoType>AO</IoType>
+            </IoItem>
+          </Channels>
+          <Info>
+            <MasterNo>1</MasterNo>
+            <StationNo>1</StationNo>
+            <StationId>0</StationId>
+            <StationOccupies>1</StationOccupies>
+            <StationType>RemoteDevice</StationType>
+            <TerminalType>Inverter</TerminalType>
+            <AddressAllocType>Exclusive</AddressAllocType>
+            <Points>1</Points>
+            <AddressRx>0</AddressRx>
+            <AddressRy>0</AddressRy>
+            <AddressRWr>0</AddressRWr>
+            <AddressRWw>0</AddressRWw>
+            <IndexDiBuf>0</IndexDiBuf>
+            <IndexDoBuf>0</IndexDoBuf>
+            <IndexAiBuf>0</IndexAiBuf>
+            <IndexAoBuf>0</IndexAoBuf>
+            <Usage>0</Usage>
+            <RangeType>0</RangeType>
+            <MovingAvg>0</MovingAvg>
+            <HasTrouble>false</HasTrouble>
+            <InitComp>false</InitComp>
+          </Info>
+          <StationNo>0</StationNo>
+          <Name>Test_V1000</Name>
+        </IoTerminal>
+      </Terminals>
+      <Slaves />
+      <ChannelNo>cclink_Slot1</ChannelNo>
+      <EtherNetIpAddress>192.168.3.1</EtherNetIpAddress>
+      <EtherNetPortNo>1000</EtherNetPortNo>
+      <EthenetProtocol>Tcp</EthenetProtocol>
+      <ProcessWorkingSetActivate>false</ProcessWorkingSetActivate>
+      <ProcessMinWorkingSetSize>1</ProcessMinWorkingSetSize>
+      <ProcessMaxWorkingSetSize>3</ProcessMaxWorkingSetSize>
+      <DevTypeRx>devX</DevTypeRx>
+      <DevTypeRy>devY</DevTypeRy>
+      <DevTypeRWr>devWr</DevTypeRWr>
+      <DevTypeRWw>devWw</DevTypeRWw>
+      <DevTypeSw>devSD</DevTypeSw>
+      <AddressBase>0</AddressBase>
+      <AddressRx>0</AddressRx>
+      <AddressRy>0</AddressRy>
+      <AddressRWr>0</AddressRWr>
+      <AddressRWw>0</AddressRWw>
+      <AddressSb>0</AddressSb>
+      <AddressSw>0</AddressSw>
+      <ReadyBitUse>false</ReadyBitUse>
+    </IoNode>
+  </Container>
+  <BusType>MitsubishiCClink</BusType>
+</IoDefines>

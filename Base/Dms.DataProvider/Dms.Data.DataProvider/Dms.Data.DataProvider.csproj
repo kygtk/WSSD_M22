@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FEB17E40-E9F9-4736-86B7-ED6A6CFDF933}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Data</RootNamespace>
+    <AssemblyName>Dms.Data.DataProvider</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{bc761389-b4de-4459-8530-bde2973a7a83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.Util\Dms.Util.IODefine\Dms.Util.IODefine.csproj">
+      <Project>{34e96022-b2c5-4d00-9198-652bcc2b076c}</Project>
+      <Name>Dms.Util.IODefine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Data.Alarm\Dms.Data.Alarm.csproj">
+      <Project>{978a2edb-33e4-4a0c-864e-dbc4d14a52ef}</Project>
+      <Name>Dms.Data.Alarm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Data.GlassData\Dms.Data.GlassData.csproj">
+      <Project>{34f81f09-6b94-4f46-8711-c555fa21e773}</Project>
+      <Name>Dms.Data.GlassData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Data.ProcessData\Dms.Data.ProcessData.csproj">
+      <Project>{8828c6f1-f17f-4029-9d2a-742658591118}</Project>
+      <Name>Dms.Data.ProcessData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Data.Recipe\Dms.Data.Recipe.csproj">
+      <Project>{89e13edf-0c74-4b9f-a0ef-a90901737724}</Project>
+      <Name>Dms.Data.Recipe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Data.SetupItem\Dms.Data.SetupItem.csproj">
+      <Project>{69d50944-7abf-4b3e-803e-5d3c0b6e886a}</Project>
+      <Name>Dms.Data.SetupItem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Data.Unit\Dms.Data.CimUnit.csproj">
+      <Project>{560b65ef-8c44-48e2-9834-7b4be12526ea}</Project>
+      <Name>Dms.Data.CimUnit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Data.UserAccount\Dms.Data.UserAccount.csproj">
+      <Project>{52242f19-2b1c-4cd9-a30c-39aebb03e8ff}</Project>
+      <Name>Dms.Data.UserAccount</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

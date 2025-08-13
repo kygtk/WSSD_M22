@@ -1,0 +1,224 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69D50944-7ABF-4B3E-803E-5D3C0B6E886A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Data</RootNamespace>
+    <AssemblyName>Dms.Data.SetupItem</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalibrationList.cs" />
+    <Compile Include="CalibrationListAdapter.cs" />
+    <Compile Include="CalibrationProvider.cs" />
+    <Compile Include="DataSetSetupItem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSetupItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetupCvInfoList.cs" />
+    <Compile Include="SetupCvInfoProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetupDevTankLevelAdapter.cs" />
+    <Compile Include="SetupDevTankLevelList.cs" />
+    <Compile Include="SetupDevTankLevelProvider.cs" />
+    <Compile Include="SetupFtpInfoAdapter.cs" />
+    <Compile Include="SetupFtpInfoList.cs" />
+    <Compile Include="SetupFtpInfoProvider.cs" />
+    <Compile Include="SetupGenInfoAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetupGenInfoList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetupHpmjInfoAdapter.cs" />
+    <Compile Include="SetupHpmjInfoList.cs" />
+    <Compile Include="SetupHpmjInfoProvider.cs" />
+    <Compile Include="SetupHsmsCeidInfoAdapter.cs" />
+    <Compile Include="SetupHsmsCeidInfoList.cs" />
+    <Compile Include="SetupHsmsCeidInfoProvider.cs" />
+    <Compile Include="SetupHsmsEcidInfoAdapter.cs" />
+    <Compile Include="SetupHsmsEcidInfoList.cs" />
+    <Compile Include="SetupHsmsEcidInfoProvider.cs" />
+    <Compile Include="SetupHsmsEqpInfoAdapter.cs" />
+    <Compile Include="SetupHsmsEqpInfoList.cs" />
+    <Compile Include="SetupHsmsEqpInfoProvider.cs" />
+    <Compile Include="SetupHsmsInfoAdapter.cs" />
+    <Compile Include="SetupHsmsInfoList.cs" />
+    <Compile Include="SetupHsmsInfoProvider.cs" />
+    <Compile Include="SetupHsmsInfoXml.cs" />
+    <Compile Include="SetupIdleInfoAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetupIdleInfoList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetupInterfaceAdapter.cs" />
+    <Compile Include="SetupInterfaceList.cs" />
+    <Compile Include="SetupInterfaceProvider.cs" />
+    <Compile Include="SetupLoaderInfoAdapter.cs" />
+    <Compile Include="SetupLoaderInfoList.cs" />
+    <Compile Include="SetupLoaderInfoProvider.cs" />
+    <Compile Include="TagGaugeData.cs" />
+    <Compile Include="TagSetupItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewHsmsSetupInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewHsmsSetupInfo.Designer.cs">
+      <DependentUpon>ViewHsmsSetupInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSetupCvInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewSetupCvInfo.Designer.cs">
+      <DependentUpon>ViewSetupCvInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSetupInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewSetupInfo.Designer.cs">
+      <DependentUpon>ViewSetupInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupCvInfoAdapter.cs" />
+    <Compile Include="SetupSensorInterlockList.cs" />
+    <Compile Include="SetupSensorInterlockListAdapter.cs" />
+    <Compile Include="SetupSensorInterlockProvider.cs" />
+    <Compile Include="SetupGenInfoProvider.cs" />
+    <Compile Include="SetupIdleInfoProvider.cs" />
+    <Compile Include="SetupCvDistanceAdapter.cs" />
+    <Compile Include="SetupCvDistanceList.cs" />
+    <Compile Include="SetupCvDistanceProvider.cs" />
+    <Compile Include="SetupSensorTimeoutAdapter.cs" />
+    <Compile Include="SetupSensorTimeoutList.cs" />
+    <Compile Include="SetupSensorTimeoutProvider.cs" />
+    <Compile Include="SetupGaugeInterlockAdapter.cs" />
+    <Compile Include="SetupGaugeInterlockList.cs" />
+    <Compile Include="SetupGaugeInterlockProvider.cs" />
+    <Compile Include="SetupTankLevelAdapter.cs" />
+    <Compile Include="SetupTankLevelList.cs" />
+    <Compile Include="SetupTankLevelProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ViewHsmsSetupInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewHsmsSetupInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSetupCvInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewSetupCvInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSetupInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewSetupInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+    </None>
+    <None Include="DataSetSetupItem.xsc">
+      <DependentUpon>DataSetSetupItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSetupItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSetupItem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSetupItem.xss">
+      <DependentUpon>DataSetSetupItem.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>
+      </SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{bc761389-b4de-4459-8530-bde2973a7a83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dms.Control\Dms.Control.DoubleBufferedGridView\Dms.Control.DoubleBufferedGridView.csproj">
+      <Project>{1e5ebd94-d93e-4f7a-9ce8-40fd2d432035}</Project>
+      <Name>Dms.Control.DoubleBufferedGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Data.Alarm\Dms.Data.Alarm.csproj">
+      <Project>{978a2edb-33e4-4a0c-864e-dbc4d14a52ef}</Project>
+      <Name>Dms.Data.Alarm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

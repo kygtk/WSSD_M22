@@ -1,0 +1,354 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34E96022-B2C5-4D00-9198-652BCC2B076C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Util.IODefine</RootNamespace>
+    <AssemblyName>Dms.Util.IODefine</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Control.DoubleBufferedGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BHY_IO2_EC_DO16NT.cs" />
+    <Compile Include="BHY_IO2_EC_DO32NT.cs" />
+    <Compile Include="BHY_IO2_EC_DI16NT.cs" />
+    <Compile Include="BHY_IO2_EC_DI32NT.cs" />
+    <Compile Include="BHY_IO2_EC_MD16NT.cs" />
+    <Compile Include="BHY_IO2_EC_MD8NT.cs" />
+    <Compile Include="BKPlcTerminal.cs" />
+    <Compile Include="CC16D.cs" />
+    <Compile Include="CC16T.cs" />
+    <Compile Include="CC32D.cs" />
+    <Compile Include="CC32T.cs" />
+    <Compile Include="CCV1000.cs" />
+    <Compile Include="CCXQD.cs" />
+    <Compile Include="DMS_AP.cs" />
+    <Compile Include="EcSlave.cs" />
+    <Compile Include="EcSlave_AIO.cs" />
+    <Compile Include="EcSlave_AO.cs" />
+    <Compile Include="EcSlaveItem.cs" />
+    <Compile Include="EcSlave_AI.cs" />
+    <Compile Include="EcSlave_AP.cs" />
+    <Compile Include="EcSlave_BLDC.cs" />
+    <Compile Include="EcSlave_DI.cs" />
+    <Compile Include="EcSlave_DIO.cs" />
+    <Compile Include="EcSlave_DO.cs" />
+    <Compile Include="EcSlave_Inverter.cs" />
+    <Compile Include="EcSlave_Servo.cs" />
+    <Compile Include="ESD_EC_120_C.cs" />
+    <Compile Include="Ezi_IO_EC_AD08_T.cs" />
+    <Compile Include="FormIOSelect2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIOSelect2.Designer.cs">
+      <DependentUpon>FormIOSelect2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMelsecDeviceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMelsecDeviceEditor.Designer.cs">
+      <DependentUpon>FormMelsecDeviceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNodeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNodeAdd.Designer.cs">
+      <DependentUpon>FormNodeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBomAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBomAnalysis.Designer.cs">
+      <DependentUpon>FormBomAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIOAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIOAdd.Designer.cs">
+      <DependentUpon>FormIOAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIOSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIOSelect.designer.cs">
+      <DependentUpon>FormIOSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSlaveAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSlaveAdd.Designer.cs">
+      <DependentUpon>FormSlaveAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSlaveSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSlaveSelect.Designer.cs">
+      <DependentUpon>FormSlaveSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSlaveSelect2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSlaveSelect2.Designer.cs">
+      <DependentUpon>FormSlaveSelect2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IoItem.cs" />
+    <Compile Include="IoNode.cs" />
+    <Compile Include="IoDefines.cs" />
+    <Compile Include="IoNodeMovensysEtherCAT.cs" />
+    <Compile Include="IoNodeTwinCATPLC.cs" />
+    <Compile Include="IoPart.cs" />
+    <Compile Include="ITerminalFactory.cs" />
+    <Compile Include="KL1488.cs" />
+    <Compile Include="IoTerminal.cs" />
+    <Compile Include="KL3061.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KL4001.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KL4022.cs" />
+    <Compile Include="MADLN05BE.cs" />
+    <Compile Include="MADLT15BF.cs" />
+    <Compile Include="MCDLN35BE.cs" />
+    <Compile Include="MelsecDeviceInfo.cs" />
+    <Compile Include="MFDLNB3BE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="KL2488.cs" />
+    <Compile Include="KL3064.cs" />
+    <Compile Include="KL4002.cs" />
+    <Compile Include="S100.cs" />
+    <Compile Include="ViewBomAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewBomAnalysis.Designer.cs">
+      <DependentUpon>ViewBomAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewIOConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewIOConfig.Designer.cs">
+      <DependentUpon>ViewIOConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewIOEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewIOEdit.Designer.cs">
+      <DependentUpon>ViewIOEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KL1184.cs" />
+    <Compile Include="KL2184.cs" />
+    <Compile Include="KL3062.cs" />
+    <Compile Include="KL3102.cs" />
+    <Compile Include="KL4004.cs" />
+    <Compile Include="BK1120.cs" />
+    <Compile Include="KL9010.cs" />
+    <Compile Include="ViewIOSelect2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewIOSelect2.Designer.cs">
+      <DependentUpon>ViewIOSelect2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMelsecDeviceEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewMelsecDeviceEdit.Designer.cs">
+      <DependentUpon>ViewMelsecDeviceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSlaveEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewSlaveEdit.Designer.cs">
+      <DependentUpon>ViewSlaveEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSlaveSelect2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewSlaveSelect2.Designer.cs">
+      <DependentUpon>ViewSlaveSelect2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X20DI9372.cs" />
+    <Compile Include="X20DO9321.cs" />
+    <Compile Include="X20AI4622.cs" />
+    <Compile Include="X20AI2622.cs" />
+    <Compile Include="X20AO4622.cs" />
+    <Compile Include="X20AO2622.cs" />
+    <Compile Include="X20BC0087.cs" />
+    <Compile Include="X20PS9400.cs" />
+    <Compile Include="X20PS2100.cs" />
+    <Compile Include="MelDevBitInput08.cs" />
+    <Compile Include="MelDevBitOutput08.cs" />
+    <Compile Include="MelDevWordOutput08.cs" />
+    <Compile Include="MelDevWordInput08.cs" />
+    <Compile Include="MelsecTerminal.cs" />
+    <Compile Include="IoNodeMelsec.cs" />
+    <Compile Include="IoNodeBrModbus.cs" />
+    <Compile Include="CCNull32.cs" />
+    <Compile Include="MelDevBitInputs.cs" />
+    <Compile Include="MelDevs.cs" />
+    <Compile Include="MelDevBitOutputs.cs" />
+    <Compile Include="MelDevWordInputs.cs" />
+    <Compile Include="MelDevWordOutputs.cs" />
+    <Compile Include="MelDevBitInput16.cs" />
+    <Compile Include="MelDevBitOutput16.cs" />
+    <Compile Include="MelDevBitInput32.cs" />
+    <Compile Include="MelDevBitOutput32.cs" />
+    <Compile Include="MelDevWordInput16.cs" />
+    <Compile Include="MelDevWordInput32.cs" />
+    <Compile Include="MelDevWordOutput16.cs" />
+    <Compile Include="MelDevWordOutput32.cs" />
+    <Compile Include="MelsecDeviceInfoProvider.cs" />
+    <Compile Include="IoNodeMelsecEtherNet.cs" />
+    <Compile Include="CCSpecialDeivce.cs" />
+    <Compile Include="CCIntelligentDevice32.cs" />
+    <Compile Include="CCDummy.cs" />
+    <Compile Include="CCMasterInfo.cs" />
+    <Compile Include="CClinkStation.cs" />
+    <Compile Include="CC64AD.cs" />
+    <Compile Include="CC62DA.cs" />
+    <Compile Include="CC32DT.cs" />
+    <Compile Include="CCReserved.cs" />
+    <Compile Include="AT2_R312.cs" />
+    <Compile Include="AT2_R334.cs" />
+    <Compile Include="AT2_R321.cs" />
+    <Compile Include="ST_1228.cs" />
+    <Compile Include="ST_2318.cs" />
+    <Compile Include="ST_3624_1.cs" />
+    <Compile Include="ST_4622.cs" />
+    <Compile Include="NA_9131.cs" />
+    <Compile Include="ST_3214.cs" />
+    <Compile Include="IoNodeCrevisModbus.cs" />
+    <Compile Include="NA_9189.cs" />
+    <Compile Include="YCS_BMC_XBD1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormIOSelect2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormIOSelect2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMelsecDeviceEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMelsecDeviceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNodeAdd.resx">
+      <DependentUpon>FormNodeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBomAnalysis.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBomAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIOAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormIOAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIOSelect.resx">
+      <DependentUpon>FormIOSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSlaveAdd.resx">
+      <DependentUpon>FormSlaveAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSlaveSelect.resx">
+      <DependentUpon>FormSlaveSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSlaveSelect2.resx">
+      <DependentUpon>FormSlaveSelect2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBomAnalysis.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewBomAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewIOConfig.resx">
+      <DependentUpon>ViewIOConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewIOEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewIOEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewIOSelect2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewIOSelect2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMelsecDeviceEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewMelsecDeviceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSlaveEdit.resx">
+      <DependentUpon>ViewSlaveEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSlaveSelect2.resx">
+      <DependentUpon>ViewSlaveSelect2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dms.Common\Dms.Common.csproj">
+      <Project>{bc761389-b4de-4459-8530-bde2973a7a83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

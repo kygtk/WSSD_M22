@@ -1,0 +1,791 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD33BA82-0578-4F59-A505-02269C4EE7AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.HMI</RootNamespace>
+    <AssemblyName>Dms.HMI</AssemblyName>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>Dics.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Dms.HMI/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assembly\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AIRCURTAINLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\AxInterop.AIRCURTAINLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.AIRKNIFELib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\AxInterop.AIRKNIFELib.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Ctl.Hsms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Ctl.Hsms.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Data.Alarm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Data.Alarm.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Data.GlassData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Data.ProcessData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Data.Recipe, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Data.UserAccount, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Data.UserAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Device.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.DeviceLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.DeviceLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Mitsubishi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Mitsubishi.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.PcSystemInfo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.PcSystemInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Util.Designer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>..\..\Base\System\Dms.Util.Designer.exe</HintPath>
+    </Reference>
+    <Reference Include="Dms.Util.IODefine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Util.IODefine.dll</HintPath>
+    </Reference>
+    <Reference Include="Dms.Util.IoSimulator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Base\System\Dms.Util.IoSimulator.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialog\DlgScreenLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DlgScreenLock.designer.cs">
+      <DependentUpon>DlgScreenLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ScreenLockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ScreenLockForm.designer.cs">
+      <DependentUpon>ScreenLockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EqpStateManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EqpStateManager.Designer.cs">
+      <DependentUpon>EqpStateManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryForm.designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryTabGlassApdLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HistoryTabGlassApdLog.designer.cs">
+      <DependentUpon>HistoryTabGlassApdLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterfaceToolbar.Designer.cs">
+      <DependentUpon>InterfaceToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabApCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabApCtrl.Designer.cs">
+      <DependentUpon>JobsTabApCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabEuvCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabEuvCtrl.designer.cs">
+      <DependentUpon>JobsTabEuvCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabGauge.Designer.cs">
+      <DependentUpon>JobsTabGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabHpmjCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabHpmjCtrl.Designer.cs">
+      <DependentUpon>JobsTabHpmjCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabInterfaceCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabInterfaceCtrl.Designer.cs">
+      <DependentUpon>JobsTabInterfaceCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabMainCtrl_R.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabMainCtrl_R.designer.cs">
+      <DependentUpon>JobsTabMainCtrl_R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabPipeCtrl_R.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabPipeCtrl_R.designer.cs">
+      <DependentUpon>JobsTabPipeCtrl_R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsToolbar.designer.cs">
+      <DependentUpon>JobsToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MaintToolbar.designer.cs">
+      <DependentUpon>MaintToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServoTabMainCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServoTabMainCtrl.designer.cs">
+      <DependentUpon>ServoTabMainCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemTabStatusCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemTabStatusCtrl.Designer.cs">
+      <DependentUpon>SystemTabStatusCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlBuilder.cs" />
+    <Compile Include="JobsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobsForm.Designer.cs">
+      <DependentUpon>JobsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabMainCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabMainCtrl.Designer.cs">
+      <DependentUpon>JobsTabMainCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dialog\DlgScreenLock.resx">
+      <DependentUpon>DlgScreenLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ScreenLockForm.resx">
+      <DependentUpon>ScreenLockForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EqpStateManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EqpStateManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryTabGlassApdLog.resx">
+      <DependentUpon>HistoryTabGlassApdLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceToolbar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InterfaceToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JobsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabApCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JobsTabApCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabEuvCtrl.resx">
+      <DependentUpon>JobsTabEuvCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabGauge.resx">
+      <DependentUpon>JobsTabGauge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabHpmjCtrl.resx">
+      <DependentUpon>JobsTabHpmjCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabInterfaceCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JobsTabInterfaceCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabMainCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JobsTabMainCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabMainCtrl_R.resx">
+      <DependentUpon>JobsTabMainCtrl_R.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabPipeCtrl_R.resx">
+      <DependentUpon>JobsTabPipeCtrl_R.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsToolbar.resx">
+      <DependentUpon>JobsToolbar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintToolbar.resx">
+      <DependentUpon>MaintToolbar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServoTabMainCtrl.resx">
+      <DependentUpon>ServoTabMainCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SystemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServoForm.resx">
+      <DependentUpon>ServoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeForm.resx">
+      <DependentUpon>RecipeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForm.resx">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmForm.resx">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabPipeCtrl.resx">
+      <DependentUpon>JobsTabPipeCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTabStatusCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SystemTabStatusCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabGlassData.resx">
+      <DependentUpon>JobsTabGlassData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabFfuCtrl.resx">
+      <DependentUpon>JobsTabFfuCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsTabSendGlassData.resx">
+      <DependentUpon>JobsTabSendGlassData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SystemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForm.Designer.cs">
+      <DependentUpon>SystemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServoForm.Designer.cs">
+      <DependentUpon>ServoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeForm.Designer.cs">
+      <DependentUpon>RecipeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForm.Designer.cs">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmForm.Designer.cs">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabPipeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabPipeCtrl.Designer.cs">
+      <DependentUpon>JobsTabPipeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabGlassData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabGlassData.Designer.cs">
+      <DependentUpon>JobsTabGlassData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabFfuCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabFfuCtrl.Designer.cs">
+      <DependentUpon>JobsTabFfuCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsTabSendGlassData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobsTabSendGlassData.Designer.cs">
+      <DependentUpon>JobsTabSendGlassData.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.gif" />
+    <None Include="Resources\BuzzerOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\Dms.Common\Dms.Common.csproj">
+      <Project>{bc761389-b4de-4459-8530-bde2973a7a83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ActuatorGroup\Dms.Control.ActuatorGroup.csproj">
+      <Project>{7e85e82a-b854-4d5b-a436-b164690a06b2}</Project>
+      <Name>Dms.Control.ActuatorGroup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ActuatorTurn\Dms.Control.ActuatorTurn.csproj">
+      <Project>{8d1c286f-1c4e-4b00-8303-e2dadac737f7}</Project>
+      <Name>Dms.Control.ActuatorTurn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Actuator\Dms.Control.Actuator.csproj">
+      <Project>{90512a15-e44e-4056-9cef-d4a8640092ae}</Project>
+      <Name>Dms.Control.Actuator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.AirCurtain\Dms.Control.AirCurtain.csproj">
+      <Project>{6af404ad-285d-48a0-bd29-87c5a8eb138e}</Project>
+      <Name>Dms.Control.AirCurtain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.AirKnife\Dms.Control.AirKnife.csproj">
+      <Project>{11deb88f-5378-4cc5-a571-dcfcf695ca2c}</Project>
+      <Name>Dms.Control.AirKnife</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ApUnit\Dms.Control.Ap.csproj">
+      <Project>{8fdeebd1-aa2f-4ec4-954e-5d144683639f}</Project>
+      <Name>Dms.Control.Ap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.AquaKnife\Dms.Control.AquaKnife.csproj">
+      <Project>{49e5e669-0f1d-40d6-9767-a60bcc254f82}</Project>
+      <Name>Dms.Control.AquaKnife</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.AutoValve\Dms.Control.AutoValve.csproj">
+      <Project>{0017887c-8b24-42a9-8f32-9b10097324b6}</Project>
+      <Name>Dms.Control.AutoValve</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Bath\Dms.Control.Bath.csproj">
+      <Project>{73685dc7-c258-400b-8893-75fd8515b177}</Project>
+      <Name>Dms.Control.Bath</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.BrokenSensorFixedType\Dms.Control.BrokenSensorFixedType.csproj">
+      <Project>{eb7846bd-fcc6-4a16-a6de-406fce78e1de}</Project>
+      <Name>Dms.Control.BrokenSensorFixedType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Buzzer\Dms.Control.Buzzer.csproj">
+      <Project>{47f27e69-c55d-4af8-9fb0-9e230e1507f2}</Project>
+      <Name>Dms.Control.Buzzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.CoverSensor\Dms.Control.CoverSensor.csproj">
+      <Project>{2b091ade-12aa-4880-a1cc-9688abbd832a}</Project>
+      <Name>Dms.Control.CoverSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.CvMotor\Dms.Control.CvMotor.csproj">
+      <Project>{621a5734-1e21-4014-b9be-5a14d113e544}</Project>
+      <Name>Dms.Control.CvMotor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.CvUnit\Dms.Control.CvUnit.csproj">
+      <Project>{a9022ec2-c0ff-4122-a155-afa7729f6425}</Project>
+      <Name>Dms.Control.CvUnit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.CylinderGroupBox\Dms.Control.CylinderGroupBox.csproj">
+      <Project>{02bdb251-662e-48f7-aa8b-4c1b0b759495}</Project>
+      <Name>Dms.Control.CylinderGroupBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Cylinder\Dms.Control.Cylinder.csproj">
+      <Project>{11254e10-0eba-42e5-8705-832b9c384530}</Project>
+      <Name>Dms.Control.Cylinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.D40A\Dms.Control.D40A.csproj">
+      <Project>{eb1d87ad-5dba-4921-ba9c-b26841753292}</Project>
+      <Name>Dms.Control.D40A</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.D4SL\Dms.Control.D4SL.csproj">
+      <Project>{017ed56e-c623-446d-a468-e0ce659d79d4}</Project>
+      <Name>Dms.Control.D4SL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.DoorLockSensor\Dms.Control.DoorLockSensor.csproj">
+      <Project>{813dcb94-a237-4834-9a60-c94d76fbab7e}</Project>
+      <Name>Dms.Control.DoorLockSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.DoorSensor\Dms.Control.DoorSensor.csproj">
+      <Project>{9503e10d-140b-463f-bcb3-720f0f9332f9}</Project>
+      <Name>Dms.Control.DoorSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.DoubleBufferedGridView\Dms.Control.DoubleBufferedGridView.csproj">
+      <Project>{1e5ebd94-d93e-4f7a-9ce8-40fd2d432035}</Project>
+      <Name>Dms.Control.DoubleBufferedGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.DualGlsSensor\Dms.Control.DualGlsSensor.csproj">
+      <Project>{7b0437ed-bc1e-4c34-84e3-228d2eebdc2c}</Project>
+      <Name>Dms.Control.DualGlsSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.EuvHouse\Dms.Control.EuvHouse.csproj">
+      <Project>{f6ce643b-77a1-4c78-93cd-e36deacb305a}</Project>
+      <Name>Dms.Control.EuvHouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.EuvLamp\Dms.Control.EuvLamp.csproj">
+      <Project>{9a858eb3-5020-48bf-9848-f4927dc37f93}</Project>
+      <Name>Dms.Control.EuvLamp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Exhaust\Dms.Control.Exhaust.csproj">
+      <Project>{a5bc67cf-abea-4944-ad3d-c1cbdc27ef94}</Project>
+      <Name>Dms.Control.Exhaust</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Flowmeter\Dms.Control.Flowmeter.csproj">
+      <Project>{fb8254d2-55f8-402d-9a71-685888e75c7a}</Project>
+      <Name>Dms.Control.Flowmeter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Gauge\Dms.Control.Gauge.csproj">
+      <Project>{d185bcec-93b2-4364-882c-b657046b46e8}</Project>
+      <Name>Dms.Control.Gauge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.GenInfo\Dms.Control.GenInfo.csproj">
+      <Project>{b1163907-cad7-4f7d-9789-a3b2157a7626}</Project>
+      <Name>Dms.Control.GenInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.GlsData\Dms.Control.GlsData.csproj">
+      <Project>{cda4e1f9-2774-481e-b891-6d8221eed896}</Project>
+      <Name>Dms.Control.GlsData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.GlsSensor\Dms.Control.GlsSensor.csproj">
+      <Project>{ab7fa2cb-4982-4060-8b79-7965fdd49e56}</Project>
+      <Name>Dms.Control.GlsSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.HeaterStatus\Dms.Control.HeaterStatus.csproj">
+      <Project>{8f030794-3875-45cf-ab8b-05f2be926522}</Project>
+      <Name>Dms.Control.HeaterStatus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Hpmj\Dms.Control.Hpmj.csproj">
+      <Project>{b33c07b2-2c7e-4e60-be93-8b4563d804bd}</Project>
+      <Name>Dms.Control.Hpmj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.InterfaceSteps\Dms.Control.IfSteps.csproj">
+      <Project>{a8d24be7-ce81-406b-8f74-e0e68824c5b3}</Project>
+      <Name>Dms.Control.IfSteps</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Ionizer\Dms.Control.Ionizer.csproj">
+      <Project>{4a525d41-51cf-4373-bc9d-9f8472406946}</Project>
+      <Name>Dms.Control.Ionizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.LCT\Dms.Control.LCT.csproj">
+      <Project>{99cd1cbe-744f-494a-b6a5-b9aa9293daf9}</Project>
+      <Name>Dms.Control.LCT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.LeakSensor\Dms.Control.LeakSensor.csproj">
+      <Project>{603e7cb9-e5e8-4854-844a-2f28fcf101b2}</Project>
+      <Name>Dms.Control.LeakSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.LevelSensor\Dms.Control.LevelSensor.csproj">
+      <Project>{44c89303-d58e-42a1-b8aa-a151e23c2508}</Project>
+      <Name>Dms.Control.LevelSensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.LFC\Dms.Control.LFC.csproj">
+      <Project>{e4680dac-862e-49da-8869-70758ab77614}</Project>
+      <Name>Dms.Control.LFC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.LogList\Dms.Control.LogList.csproj">
+      <Project>{55c3f0b0-1f11-4753-ab77-03d2e8ae0be9}</Project>
+      <Name>Dms.Control.LogList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.MainStatus.Type1\Dms.Control.MainStatus.Type1.csproj">
+      <Project>{f531bc08-21bd-4af9-aa13-309ccdd05d9b}</Project>
+      <Name>Dms.Control.MainStatus.Type1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Manometer\Dms.Control.Manometer.csproj">
+      <Project>{e920469a-d38e-414e-92c4-0f340f77221c}</Project>
+      <Name>Dms.Control.Manometer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.MovingObject2\Dms.Control.MovingObject2.csproj">
+      <Project>{a49f96f4-3d8b-4818-8050-729edbd51840}</Project>
+      <Name>Dms.Control.MovingObject2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.MovingObject3\Dms.Control.MovingObject3.csproj">
+      <Project>{489cc7f9-23db-4fbe-8091-946b98d75abf}</Project>
+      <Name>Dms.Control.MovingObject3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.MovingObject\Dms.Control.MovingObject.csproj">
+      <Project>{205ed299-e732-40b0-95d0-0428847acd45}</Project>
+      <Name>Dms.Control.MovingObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Piping\Dms.Control.Piping.csproj">
+      <Project>{25611e12-1ac4-4808-8cfa-04e73fb0130f}</Project>
+      <Name>Dms.Control.Piping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ProcessTime\Dms.Control.ProcessTime.csproj">
+      <Project>{8a8411b6-7655-41a0-b728-49b467540184}</Project>
+      <Name>Dms.Control.ProcessTime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Pump\Dms.Control.Pump.csproj">
+      <Project>{8445b117-36e9-4086-b21f-2793098bafb2}</Project>
+      <Name>Dms.Control.Pump</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.RbMotor\Dms.Control.RbMotor.csproj">
+      <Project>{78a4ea6c-e80a-470c-a423-1f7ad0cf971d}</Project>
+      <Name>Dms.Control.RbMotor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Sbj\Dms.Control.Sbj.csproj">
+      <Project>{997332f1-d772-4387-ba54-13fbbb64cfe3}</Project>
+      <Name>Dms.Control.Sbj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Sensor\Dms.Control.Sensor.csproj">
+      <Project>{fb72ada1-422f-422e-a30f-f8a5006f1326}</Project>
+      <Name>Dms.Control.Sensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ShinkoDry\Dms.Control.ShinkoDry.csproj">
+      <Project>{454337b1-a0f9-4bfd-83f9-4f5315e747b7}</Project>
+      <Name>Dms.Control.ShinkoDry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Shower\Dms.Control.Shower.csproj">
+      <Project>{756d9566-a20c-4c97-a8a2-85cecb967568}</Project>
+      <Name>Dms.Control.Shower</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.SignalTower\Dms.Control.SignalTower.csproj">
+      <Project>{94cf3de8-d69d-4e49-a1d0-7eeba69b3425}</Project>
+      <Name>Dms.Control.SignalTower</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.SmartDamper\Dms.Control.SmartDamper.csproj">
+      <Project>{fc604f50-1aef-4e4a-8e6f-94a693434db9}</Project>
+      <Name>Dms.Control.SmartDamper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.SubStatus\Dms.Control.SubStatus.csproj">
+      <Project>{a997ca4b-ef42-45c1-86a4-54461b6db44c}</Project>
+      <Name>Dms.Control.SubStatus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.SwitchButton\Dms.Control.SwitchButton.csproj">
+      <Project>{832d2379-d3e3-4c2c-97db-bb2f5dc9e47b}</Project>
+      <Name>Dms.Control.SwitchButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.TagButton\Dms.Control.TagButton.csproj">
+      <Project>{2a2b14a5-179c-496e-b002-6f1970acb3c3}</Project>
+      <Name>Dms.Control.TagButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Tank\Dms.Control.Tank.csproj">
+      <Project>{e3d6d47e-3da8-4d0a-a961-5d9d176ccaf8}</Project>
+      <Name>Dms.Control.Tank</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.TempStatus\Dms.Control.TempStatus.csproj">
+      <Project>{27ed1ce1-e2b1-49ad-8af7-2f903edd9ea6}</Project>
+      <Name>Dms.Control.TempStatus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.Unit\Dms.Control.Unit.csproj">
+      <Project>{8886031b-7b53-484b-8b42-ffe31dffd9b9}</Project>
+      <Name>Dms.Control.Unit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.VerticalProgressBar\Dms.Control.VerticalProgressBar.csproj">
+      <Project>{13f34ecc-c1e1-405b-8ca6-8fb7e4db7a17}</Project>
+      <Name>Dms.Control.VerticalProgressBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ViewObjects\Dms.Control.ViewObjects.csproj">
+      <Project>{6d90d456-25f2-4987-9deb-b7dd6c560255}</Project>
+      <Name>Dms.Control.ViewObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ViewPSMAp\Dms.Control.ViewPSMAp.csproj">
+      <Project>{67ca0b6a-dbd8-4419-85d0-d2f0e6c16415}</Project>
+      <Name>Dms.Control.ViewPSMAp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ViewSeAp\Dms.Control.ViewSeAp.csproj">
+      <Project>{3ece337c-7fdb-4902-8cec-6a60d4f7c962}</Project>
+      <Name>Dms.Control.ViewSeAp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Control\Dms.Control.ViewUshioEuv\Dms.Control.ViewUshioEuv.csproj">
+      <Project>{df5528d8-308f-4821-8751-ed6607ce715b}</Project>
+      <Name>Dms.Control.ViewUshioEuv</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Ctl%28Dll%29\Dms.Ctl.BrModbus\Dms.Ctl.BrModbus.csproj">
+      <Project>{646d06b4-67a4-4ad8-9342-1011cfbee567}</Project>
+      <Name>Dms.Ctl.BrModbus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Ctl%28Dll%29\Dms.Ctl.MelsecNet\Dms.Ctl.MelsecNet.csproj">
+      <Project>{13fa901c-da6c-464d-b698-010064af0907}</Project>
+      <Name>Dms.Ctl.MelsecNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Ctl%28Dll%29\Dms.Ctl.Melsec\Dms.Ctl.Melsec.csproj">
+      <Project>{66bea968-ef39-4236-a702-80e72ca79efd}</Project>
+      <Name>Dms.Ctl.Melsec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Ctl%28Dll%29\Dms.Ctl.TwinCat\Dms.Ctl.TwinCAT.csproj">
+      <Project>{085ff36d-ae0e-41e4-8ad7-a562285a72fb}</Project>
+      <Name>Dms.Ctl.TwinCAT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.Ctl%28Dll%29\Dms.Ctl.WMX\Dms.Ctl.WMX.csproj">
+      <Project>{6011a811-2820-48fa-bd13-5a443746bbd2}</Project>
+      <Name>Dms.Ctl.WMX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.DataProvider\Dms.Data.DataProvider\Dms.Data.DataProvider.csproj">
+      <Project>{feb17e40-e9f9-4736-86b7-ed6a6cfdf933}</Project>
+      <Name>Dms.Data.DataProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.DataProvider\Dms.Data.SetupItem\Dms.Data.SetupItem.csproj">
+      <Project>{69d50944-7abf-4b3e-803e-5d3c0b6e886a}</Project>
+      <Name>Dms.Data.SetupItem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Base\Dms.ServerCommon\Dms.ServerCommon.csproj">
+      <Project>{9e0f819e-7f99-425d-9903-3cada8fd0b5e}</Project>
+      <Name>Dms.ServerCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Server\Dms.Server\Dms.Server.csproj">
+      <Project>{51B3F6FD-BAA6-45DB-9C53-E82F38A11097}</Project>
+      <Name>Dms.Server</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dics.ico" />
+    <None Include="Resources\IFReset.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

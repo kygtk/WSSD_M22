@@ -1,0 +1,253 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C57C2C4-3695-48A8-8ED1-3397548C1BAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Control.Hmi</RootNamespace>
+    <AssemblyName>Dms.Control.Hmi</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Control.DoubleBufferedGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Device, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dms.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Assembly\Dms.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommentProvider\DmsHmiCommentProvider.cs" />
+    <Compile Include="CommentProvider\FormCommentGroupConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentProvider\FormCommentGroupConfig.Designer.cs">
+      <DependentUpon>FormCommentGroupConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentProvider\FormCommentGroupSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentProvider\FormCommentGroupSelect.Designer.cs">
+      <DependentUpon>FormCommentGroupSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentProvider\UIEditorHmiCommentGroup.cs" />
+    <Compile Include="CommentProvider\ViewCommentGroupConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommentProvider\ViewCommentGroupConfig.Designer.cs">
+      <DependentUpon>ViewCommentGroupConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentProvider\ViewCommentGroupSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommentProvider\ViewCommentGroupSelect.Designer.cs">
+      <DependentUpon>ViewCommentGroupSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HmiAutoValve\HmiAutoValve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HmiAutoValve\HmiAutoValve.Designer.cs">
+      <DependentUpon>HmiAutoValve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HmiAutoValve\HmiDlgAutoValve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HmiAutoValve\HmiDlgAutoValve.Designer.cs">
+      <DependentUpon>HmiDlgAutoValve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DmsHmiComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HmiBasic\HmiSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HmiAutoValve\HmiAutoValve2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HmiAutoValve\HmiAutoValve2.Designer.cs">
+      <DependentUpon>HmiAutoValve2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HmiAutoValve\HmiDlgAutoValve2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HmiAutoValve\HmiDlgAutoValve2.Designer.cs">
+      <DependentUpon>HmiDlgAutoValve2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HmiBasic\HmiDateTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HmiBasic\HmiDateTime.Designer.cs">
+      <DependentUpon>HmiDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HmiBasic\HmiCommentSimple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HmiBasic\HmiCommentSimple.Designer.cs">
+      <DependentUpon>HmiCommentSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HmiBasic\HmiCommentWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HmiBasic\HmiCommentWord.Designer.cs">
+      <DependentUpon>HmiCommentWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HmiBasic\HmiCommentBit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HmiBasic\HmiCommentBit.Designer.cs">
+      <DependentUpon>HmiCommentBit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDmsHmiComponent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_h_off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_h_on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_h_push.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_off_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_on_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_push.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_push_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_r_off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_r_off_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_r_on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_r_on_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_r_push.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_r_push_h.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_v_off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_v_on.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HmiAutoValve\Resources\autovalve_v_push.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CommentProvider\FormCommentGroupConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCommentGroupConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentProvider\FormCommentGroupSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCommentGroupSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentProvider\ViewCommentGroupConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewCommentGroupConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentProvider\ViewCommentGroupSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewCommentGroupSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HmiAutoValve\HmiAutoValve.resx">
+      <DependentUpon>HmiAutoValve.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HmiAutoValve\HmiDlgAutoValve.resx">
+      <DependentUpon>HmiDlgAutoValve.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HmiAutoValve\HmiAutoValve2.resx">
+      <DependentUpon>HmiAutoValve2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HmiAutoValve\HmiDlgAutoValve2.resx">
+      <DependentUpon>HmiDlgAutoValve2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HmiBasic\HmiCommentSimple.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HmiCommentSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HmiBasic\HmiDateTime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HmiDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HmiBasic\HmiCommentWord.resx">
+      <DependentUpon>HmiCommentWord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HmiBasic\HmiCommentBit.resx">
+      <DependentUpon>HmiCommentBit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

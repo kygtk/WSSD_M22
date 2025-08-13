@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <UserControlBuild>false</UserControlBuild>
+  <Resolution>R1280_1024</Resolution>
+  <AutoStart>true</AutoStart>
+  <ServerMode>Local</ServerMode>
+  <Simul>
+    <IoController>true</IoController>
+    <Device>true</Device>
+    <IoMapping>false</IoMapping>
+    <Motion>true</Motion>
+    <Melsec>true</Melsec>
+    <Interface>true</Interface>
+    <Comport>true</Comport>
+    <Cim>true</Cim>
+    <LType>false</LType>
+    <Loader>true</Loader>
+    <Eqp>true</Eqp>
+  </Simul>
+  <StorageAvailableRatio>5</StorageAvailableRatio>
+  <UseCpuTemperatureCheck>true</UseCpuTemperatureCheck>
+  <PcType>General</PcType>
+  <UseDefaultFilePath>true</UseDefaultFilePath>
+  <EqpLogDays>30</EqpLogDays>
+  <ApdLogDays>30</ApdLogDays>
+  <TasLogDays>30</TasLogDays>
+  <EqpLogPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Log</SelectedFolder>
+  </EqpLogPath>
+  <ApdLogPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Log</SelectedFolder>
+  </ApdLogPath>
+  <TasLogPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Log</SelectedFolder>
+  </TasLogPath>
+  <AlarmDBFile>
+    <SelectedFile>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\DataBase\DmsAlarms.mdb</SelectedFile>
+  </AlarmDBFile>
+  <GlassDataDBFile>
+    <SelectedFile>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\DataBase\DmsGlassData.mdb</SelectedFile>
+  </GlassDataDBFile>
+  <RecipeDBFile>
+    <SelectedFile>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\DataBase\DmsRecipe.mdb</SelectedFile>
+  </RecipeDBFile>
+  <SetupDBFile>
+    <SelectedFile>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\DataBase\DmsSetup.mdb</SelectedFile>
+  </SetupDBFile>
+  <UserDBFile>
+    <SelectedFile>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\DataBase\DmsUser.mdb</SelectedFile>
+  </UserDBFile>
+  <GlassDataXmlFile>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </GlassDataXmlFile>
+  <LostGlassDataXmlFile>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </LostGlassDataXmlFile>
+  <ComponentContainerPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </ComponentContainerPath>
+  <IoDefinePath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </IoDefinePath>
+  <AppDataPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </AppDataPath>
+  <PartsItemPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </PartsItemPath>
+  <ApdDataPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </ApdDataPath>
+  <DevicePath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </DevicePath>
+  <DmsControlHmiConfigPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </DmsControlHmiConfigPath>
+  <MelsecConfigurationPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </MelsecConfigurationPath>
+  <ServoParameterPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles\ServoPara</SelectedFolder>
+  </ServoParameterPath>
+  <ModbusConfigurationPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </ModbusConfigurationPath>
+  <SecomXmlFile>
+    <SelectedFile>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles\GeneralData.ini</SelectedFile>
+  </SecomXmlFile>
+  <MelsecDeviceInfoPath>
+    <SelectedFolder>C:\Users\d\Documents\____WSSD\15HC50_BOE_G8_TFT_DHDC_(EUV)\Configfiles</SelectedFolder>
+  </MelsecDeviceInfoPath>
+  <UnitInfoDBFile>
+    <SelectedFile>Select Folder</SelectedFile>
+  </UnitInfoDBFile>
+  <ProcessDataDBFile>
+    <SelectedFile>C:\Users\admin\Desktop\15HC50_BOE_G8_TFT_DHDC_(EUV)\DataBase\DmsProcessData.mdb</SelectedFile>
+  </ProcessDataDBFile>
+  <CimAlarmDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </CimAlarmDBFile>
+  <CurrentDataDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </CurrentDataDBFile>
+  <UnitRecipeInfoDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </UnitRecipeInfoDBFile>
+  <UnitRecipeTypeInfoDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </UnitRecipeTypeInfoDBFile>
+  <DosingTableDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </DosingTableDBFile>
+  <TimeTableDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </TimeTableDBFile>
+  <RecipeXmlFile>
+    <SelectedFolder>Select Folder</SelectedFolder>
+  </RecipeXmlFile>
+</AppConfig>

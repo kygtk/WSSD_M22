@@ -1,0 +1,156 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A57E7787-450A-4EC1-861B-FDDF36C10EBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dms.Sequence</RootNamespace>
+    <AssemblyName>Dms.Sequence</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\System\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dms.Ctl.Hsms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SeqCimHsms.cs" />
+    <Compile Include="SeqEyeEuv.cs" />
+    <Compile Include="SeqHeatExchanger.cs" />
+    <Compile Include="SeqInterlockForcedExhaust.cs" />
+    <Compile Include="SeqLoaderMng.cs" />
+    <Compile Include="SeqMixSupplyPump.cs" />
+    <Compile Include="SeqMixTank.cs" />
+    <Compile Include="SeqPortMng.cs" />
+    <Compile Include="SeqRbtMng.cs" />
+    <Compile Include="SeqSeApPlasma.cs" />
+    <Compile Include="SeqAbsodexMotor.cs" />
+    <Compile Include="SeqAlarmResetSwitch.cs" />
+    <Compile Include="SeqPSMApPlasma.cs" />
+    <Compile Include="SeqBuzzerControl.cs" />
+    <Compile Include="SeqCirPump.cs" />
+    <Compile Include="SeqCv.cs" />
+    <Compile Include="SeqDevPump.cs" />
+    <Compile Include="SeqDevTank.cs" />
+    <Compile Include="SeqFishHand.cs" />
+    <Compile Include="SeqGauge.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeqHeater.cs" />
+    <Compile Include="SeqHpmj.cs" />
+    <Compile Include="SeqHsms.cs" />
+    <Compile Include="SeqMain.cs" />
+    <Compile Include="SeqPartsLifeTime.cs" />
+    <Compile Include="SeqProcessUnit.cs" />
+    <Compile Include="SeqPump.cs" />
+    <Compile Include="SeqRollBrush.cs" />
+    <Compile Include="SeqServoTilt.cs" />
+    <Compile Include="SeqSingnalTowerControl.cs" />
+    <Compile Include="SeqInterlockCover.cs" />
+    <Compile Include="SeqInterlockDoor.cs" />
+    <Compile Include="SeqInterlockEmo.cs" />
+    <Compile Include="SeqInterlockLeak.cs" />
+    <Compile Include="SeqInterlockFFU.cs" />
+    <Compile Include="SeqInterlockHEPA.cs" />
+    <Compile Include="SeqInterlockIonizer.cs" />
+    <Compile Include="SeqInterlockArea.cs" />
+    <Compile Include="SeqSystemControl.cs" />
+    <Compile Include="SeqTank.cs" />
+    <Compile Include="SeqGantry.cs" />
+    <Compile Include="SeqDryPump.cs" />
+    <Compile Include="SeqTransferRobotControl.cs" />
+    <Compile Include="SeqUshioEuv.cs" />
+    <Compile Include="SeqHotWire.cs" />
+    <Compile Include="SeqDiskBrush.cs" />
+    <Compile Include="SeqRotaryPump.cs" />
+    <Compile Include="SeqApc.cs" />
+    <Compile Include="SeqLampSwitchControl.cs" />
+    <Compile Include="SeqDetSupplyPump.cs" />
+    <Compile Include="SeqRfControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dms.Common\Dms.Common.csproj">
+      <Project>{bc761389-b4de-4459-8530-bde2973a7a83}</Project>
+      <Name>Dms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.Alarm\Dms.Data.Alarm.csproj">
+      <Project>{978a2edb-33e4-4a0c-864e-dbc4d14a52ef}</Project>
+      <Name>Dms.Data.Alarm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.DataProvider\Dms.Data.SetupItem\Dms.Data.SetupItem.csproj">
+      <Project>{69d50944-7abf-4b3e-803e-5d3c0b6e886a}</Project>
+      <Name>Dms.Data.SetupItem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.Device\Dms.Device.csproj">
+      <Project>{fd61731d-4cf7-40b4-9e46-0252affb6509}</Project>
+      <Name>Dms.Device</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.PcSystemInfo\Dms.PcSystemInfo.csproj">
+      <Project>{3d34fa58-db63-463d-8e75-dd6dda425826}</Project>
+      <Name>Dms.PcSystemInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dms.ServerCommon\Dms.ServerCommon.csproj">
+      <Project>{9E0F819E-7F99-425D-9903-3CADA8FD0B5E}</Project>
+      <Name>Dms.ServerCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

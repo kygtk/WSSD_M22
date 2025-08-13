@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <UserControlBuild>false</UserControlBuild>
+  <Resolution>R1280_1024</Resolution>
+  <AutoStart>true</AutoStart>
+  <ServerMode>Local</ServerMode>
+  <Simul>
+    <IoController>true</IoController>
+    <Device>true</Device>
+    <IoMapping>false</IoMapping>
+    <Motion>true</Motion>
+    <Melsec>true</Melsec>
+    <Interface>true</Interface>
+    <Comport>true</Comport>
+    <Cim>true</Cim>
+    <LType>false</LType>
+    <Loader>true</Loader>
+    <Eqp>true</Eqp>
+  </Simul>
+  <StorageAvailableRatio>5</StorageAvailableRatio>
+  <UseCpuTemperatureCheck>true</UseCpuTemperatureCheck>
+  <PcType>General</PcType>
+  <UseDefaultFilePath>true</UseDefaultFilePath>
+  <EqpLogDays>30</EqpLogDays>
+  <ApdLogDays>30</ApdLogDays>
+  <TasLogDays>30</TasLogDays>
+  <EqpLogPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Log</SelectedFolder>
+  </EqpLogPath>
+  <ApdLogPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Log</SelectedFolder>
+  </ApdLogPath>
+  <TasLogPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Log</SelectedFolder>
+  </TasLogPath>
+  <AlarmDBFile>
+    <SelectedFile>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\DataBase\DmsAlarms.mdb</SelectedFile>
+  </AlarmDBFile>
+  <GlassDataDBFile>
+    <SelectedFile>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\DataBase\DmsGlassData.mdb</SelectedFile>
+  </GlassDataDBFile>
+  <RecipeDBFile>
+    <SelectedFile>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\DataBase\DmsRecipe.mdb</SelectedFile>
+  </RecipeDBFile>
+  <SetupDBFile>
+    <SelectedFile>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\DataBase\DmsSetup.mdb</SelectedFile>
+  </SetupDBFile>
+  <UserDBFile>
+    <SelectedFile>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\DataBase\DmsUser.mdb</SelectedFile>
+  </UserDBFile>
+  <GlassDataXmlFile>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </GlassDataXmlFile>
+  <LostGlassDataXmlFile>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </LostGlassDataXmlFile>
+  <ComponentContainerPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </ComponentContainerPath>
+  <IoDefinePath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </IoDefinePath>
+  <AppDataPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </AppDataPath>
+  <PartsItemPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </PartsItemPath>
+  <ApdDataPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </ApdDataPath>
+  <DevicePath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </DevicePath>
+  <DmsControlHmiConfigPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </DmsControlHmiConfigPath>
+  <MelsecConfigurationPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </MelsecConfigurationPath>
+  <ServoParameterPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles\ServoPara</SelectedFolder>
+  </ServoParameterPath>
+  <ModbusConfigurationPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </ModbusConfigurationPath>
+  <SecomXmlFile>
+    <SelectedFile>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles\GeneralData.ini</SelectedFile>
+  </SecomXmlFile>
+  <MelsecDeviceInfoPath>
+    <SelectedFolder>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\Configfiles</SelectedFolder>
+  </MelsecDeviceInfoPath>
+  <UnitInfoDBFile>
+    <SelectedFile>Select Folder</SelectedFile>
+  </UnitInfoDBFile>
+  <ProcessDataDBFile>
+    <SelectedFile>C:\01.ktae\00_Project\00_PC\두께측정기\WSSD_M22_20250812\DataBase\DmsProcessData.mdb</SelectedFile>
+  </ProcessDataDBFile>
+  <CimAlarmDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </CimAlarmDBFile>
+  <CurrentDataDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </CurrentDataDBFile>
+  <UnitRecipeInfoDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </UnitRecipeInfoDBFile>
+  <UnitRecipeTypeInfoDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </UnitRecipeTypeInfoDBFile>
+  <DosingTableDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </DosingTableDBFile>
+  <TimeTableDBFile>
+    <SelectedFile>Select File</SelectedFile>
+  </TimeTableDBFile>
+  <RecipeXmlFile>
+    <SelectedFolder>Select Folder</SelectedFolder>
+  </RecipeXmlFile>
+</AppConfig>
